@@ -6,24 +6,24 @@
   <a href="#ReportSummary">1. Report Summary</a>
   <a href="#OrganizationChart">2. Organization Chart and Task Distribution</a>
   <a href="#VehicleDesign">3. Vehicle Design</a>
-  <a href="#SystemDesign">3.1 System Design</a>
-  <a href="#MechanicalDesign">3.2 Mechanical Design of the Vehicle</a>
-  <a href="#MechanicalDesignProcess">3.2.1 Mechanical Design Process</a>
-  <a href="#Materials">3.2.2 Materials</a>
-  <a href="#ProductionMethods">3.2.3 Production methods</a>
-  <a href="#PhysicalProperties">3.2.4 Physical Properties</a>
-  <a href="#ElectronicDesign"
+  <a class="sidebar__smallOne" href="#SystemDesign">3.1 System Design</a>
+  <a class="sidebar__smallOne" href="#MechanicalDesign">3.2 Mechanical Design of the Vehicle</a>
+  <a class="sidebar__smallTwo" href="#MechanicalDesignProcess">3.2.1 Mechanical Design Process</a>
+  <a class="sidebar__smallTwo" href="#Materials">3.2.2 Materials</a>
+  <a class="sidebar__smallTwo" href="#ProductionMethods">3.2.3 Production methods</a>
+  <a class="sidebar__smallTwo" href="#PhysicalProperties">3.2.4 Physical Properties</a>
+  <a class="sidebar__smallOne" href="#ElectronicDesign"
     >3.3 Electronic Design, Algorithm and Software Design</a
   >
-  <a href="#ElectronicDesignProcess">3.3.1 Electronic Design Process</a>
-  <a href="#PowerSupply">3.3.1.1 Power supply</a>
-  <a href="#LogicControl">3.3.1.2 Logic control and circuits</a>
-  <a href="#Sensors">3.3.1.3 Sensors</a>
-  <a href="#Communication">3.3.1.4 Communication</a>
-  <a href="#VisionSystem">3.3.1.5 Vision system</a>
-  <a href="#AlgorithmDesign">3.3.2. Algorithm Design Process</a>
-  <a href="#SoftwareDesign">3.3.3. Software Design Process</a>
-  <a href="#ExternalInterfaces">3.4. External Interfaces</a>
+  <a class="sidebar__smallTwo" href="#ElectronicDesignProcess">3.3.1 Electronic Design Process</a>
+  <a class="sidebar__smallThree" href="#PowerSupply">3.3.1.1 Power supply</a>
+  <a class="sidebar__smallThree" href="#LogicControl">3.3.1.2 Logic control and circuits</a>
+  <a class="sidebar__smallThree" href="#Sensors">3.3.1.3 Sensors</a>
+  <a class="sidebar__smallThree" href="#Communication">3.3.1.4 Communication</a>
+  <a class="sidebar__smallThree" href="#VisionSystem">3.3.1.5 Vision system</a>
+  <a class="sidebar__smallTwo" href="#AlgorithmDesign">3.3.2. Algorithm Design Process</a>
+  <a class="sidebar__smallTwo" href="#SoftwareDesign">3.3.3. Software Design Process</a>
+  <a class="sidebar__smallOne" href="#ExternalInterfaces">3.4. External Interfaces</a>
   <a href="#Security">4. Security</a>
 </div>
 
@@ -608,7 +608,7 @@
     width: 300px;
     background-color: #132142;
     position: fixed;
-    height: 100%;
+    height: auto;
     overflow: auto;
   }
 
@@ -628,5 +628,20 @@
     margin-left: 300px;
     margin-right: 250px;
     padding: 1px 5px;
+  }
+
+  .sidebar__smallOne{
+    font-size: 0.90em;
+    margin-left: 10px;
+  }
+
+  .sidebar__smallTwo{
+    font-size: 0.80em;
+    margin-left: 20px;
+  }
+
+  .sidebar__smallThree{
+    font-size: 0.70em;
+    margin-left: 30px;
   }
 </style>
