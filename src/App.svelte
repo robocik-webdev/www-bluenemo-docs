@@ -1,28 +1,58 @@
 <script>
-  import { scrollto } from "svelte-scrollto";
+  import { scrollto } from 'svelte-scrollto';
   let img = 'rsc/images';
 </script>
 
 <div class="sidebar">
   <a use:scrollto={'#ReportSummary'}>1. Report Summary</a>
-  <a use:scrollto={'#OrganizationChart'}>2. Organization Chart and Task Distribution</a>
+  <a use:scrollto={'#OrganizationChart'}
+    >2. Organization Chart and Task Distribution</a
+  >
   <a use:scrollto={'#VehicleDesign'}>3. Vehicle Design</a>
-  <a class="sidebar__smallOne" use:scrollto={'#SystemDesign'}>3.1 System Design</a>
-  <a class="sidebar__smallOne" use:scrollto={'#MechanicalDesign'}>3.2 Mechanical Design of the Vehicle</a>
-  <a class="sidebar__smallTwo" use:scrollto={'#MechanicalDesignProcess'}>3.2.1 Mechanical Design Process</a>
+  <a class="sidebar__smallOne" use:scrollto={'#SystemDesign'}
+    >3.1 System Design</a
+  >
+  <a class="sidebar__smallOne" use:scrollto={'#MechanicalDesign'}
+    >3.2 Mechanical Design of the Vehicle</a
+  >
+  <a class="sidebar__smallTwo" use:scrollto={'#MechanicalDesignProcess'}
+    >3.2.1 Mechanical Design Process</a
+  >
   <a class="sidebar__smallTwo" use:scrollto={'#Materials'}>3.2.2 Materials</a>
-  <a class="sidebar__smallTwo" use:scrollto={'#ProductionMethods'}>3.2.3 Production methods</a>
-  <a class="sidebar__smallTwo" use:scrollto={'#PhysicalProperties'}>3.2.4 Physical Properties</a>
-  <a class="sidebar__smallOne" use:scrollto={'h#ElectronicDesign'}>3.3 Electronic Design, Algorithm and Software Design</a>
-  <a class="sidebar__smallTwo" use:scrollto={'#ElectronicDesignProcess'}>3.3.1 Electronic Design Process</a>
-  <a class="sidebar__smallThree" use:scrollto={'#PowerSupply'}>3.3.1.1 Power supply</a>
-  <a class="sidebar__smallThree" use:scrollto={'#LogicControl'}>3.3.1.2 Logic control and circuits</a>
+  <a class="sidebar__smallTwo" use:scrollto={'#ProductionMethods'}
+    >3.2.3 Production methods</a
+  >
+  <a class="sidebar__smallTwo" use:scrollto={'#PhysicalProperties'}
+    >3.2.4 Physical Properties</a
+  >
+  <a class="sidebar__smallOne" use:scrollto={'h#ElectronicDesign'}
+    >3.3 Electronic Design, Algorithm and Software Design</a
+  >
+  <a class="sidebar__smallTwo" use:scrollto={'#ElectronicDesignProcess'}
+    >3.3.1 Electronic Design Process</a
+  >
+  <a class="sidebar__smallThree" use:scrollto={'#PowerSupply'}
+    >3.3.1.1 Power supply</a
+  >
+  <a class="sidebar__smallThree" use:scrollto={'#LogicControl'}
+    >3.3.1.2 Logic control and circuits</a
+  >
   <a class="sidebar__smallThree" use:scrollto={'#Sensors'}>3.3.1.3 Sensors</a>
-  <a class="sidebar__smallThree" use:scrollto={'#Communication'}>3.3.1.4 Communication</a>
-  <a class="sidebar__smallThree" use:scrollto={'#VisionSystem'}>3.3.1.5 Vision system</a>
-  <a class="sidebar__smallTwo" use:scrollto={'#AlgorithmDesign'}>3.3.2. Algorithm Design Process</a>
-  <a class="sidebar__smallTwo" use:scrollto={'#SoftwareDesign'}>3.3.3. Software Design Process</a>
-  <a class="sidebar__smallOne" use:scrollto={'#ExternalInterfaces'}>3.4. External Interfaces</a>
+  <a class="sidebar__smallThree" use:scrollto={'#Communication'}
+    >3.3.1.4 Communication</a
+  >
+  <a class="sidebar__smallThree" use:scrollto={'#VisionSystem'}
+    >3.3.1.5 Vision system</a
+  >
+  <a class="sidebar__smallTwo" use:scrollto={'#AlgorithmDesign'}
+    >3.3.2. Algorithm Design Process</a
+  >
+  <a class="sidebar__smallTwo" use:scrollto={'#SoftwareDesign'}
+    >3.3.3. Software Design Process</a
+  >
+  <a class="sidebar__smallOne" use:scrollto={'#ExternalInterfaces'}
+    >3.4. External Interfaces</a
+  >
   <a use:scrollto={'#Security'}>4. Security</a>
 </div>
 
@@ -257,8 +287,7 @@
   </ul>
 
   <p>
-    &ensp;&ensp;&ensp;The brushless motors used in the drone are powered by the
-    PCB as shown below
+    The brushless motors used in the drone are powered by the PCB as shown below
   </p>
   <figure>
     <img src="{img}/board_thrusters.png" alt="powering motors pcb" />
@@ -440,7 +469,7 @@
   </p>
   <figure>
     <img src="{img}/code_drop_marker.png" alt="code" />
-    
+
     <figcaption>
       Fig.21 - On the left example task code, on the right debug view from the
       virtual machine running it
@@ -461,12 +490,13 @@
   <figure>
     <img src="{img}/diagram_modules.png" alt="diagram modules" />
     <figcaption>
-      Fig.22 - Structure of processing units, programs that they run and connected devices
+      Fig.22 - Structure of processing units, programs that they run and
+      connected devices
     </figcaption>
   </figure>
 
   <p>
-    &ensp;&ensp;&ensp;IIn order to speed up the process of testing and creating
+    &ensp;&ensp;&ensp;In order to speed up the process of testing and creating
     the software, we created an underwater environment in Unity3D. In order to
     speed up the process of testing and creating the software, we created an
     underwater environment in Unity3D. It can be connected to the controller
@@ -507,7 +537,9 @@
   </p>
   <figure>
     <img src="{img}/camera_simulator_views.png" alt="camera views" />
-    <figcaption>Fig.24 - Samples from the dataset generated by the simulator program</figcaption>
+    <figcaption>
+      Fig.24 - Samples from the dataset generated by the simulator program
+    </figcaption>
   </figure>
 
   <p>
@@ -540,7 +572,7 @@
   </p>
   <figure>
     <img src="{img}/battery_parameters.png" alt="battery parameters" />
-    <figcaption>Fig.26 - GRALMarine battery specification table </figcaption>
+    <figcaption>Fig.26 - GRALMarine battery specification table</figcaption>
   </figure>
 
   <p>
@@ -589,12 +621,16 @@
 <style>
   p,
   li,
-  figcaption {
+  figure {
     font-size: 0.75em;
   }
 
+  figure{
+    margin: 35px 0px 35px 0;
+  }
+
   figcaption {
-    margin-top: 5px;
+    margin-top: 10px;
     text-align: center;
   }
 
@@ -634,18 +670,18 @@
     padding: 1px 5px;
   }
 
-  .sidebar__smallOne{
-    font-size: 0.90em;
+  .sidebar__smallOne {
+    font-size: 0.9em;
     margin-left: 10px;
   }
 
-  .sidebar__smallTwo{
-    font-size: 0.80em;
+  .sidebar__smallTwo {
+    font-size: 0.8em;
     margin-left: 20px;
   }
 
-  .sidebar__smallThree{
-    font-size: 0.70em;
+  .sidebar__smallThree {
+    font-size: 0.7em;
     margin-left: 30px;
   }
 </style>
