@@ -1,29 +1,28 @@
 <script>
+  import { scrollto } from "svelte-scrollto";
   let img = 'rsc/images';
 </script>
 
 <div class="sidebar">
-  <a href="#ReportSummary">1. Report Summary</a>
-  <a href="#OrganizationChart">2. Organization Chart and Task Distribution</a>
-  <a href="#VehicleDesign">3. Vehicle Design</a>
-  <a class="sidebar__smallOne" href="#SystemDesign">3.1 System Design</a>
-  <a class="sidebar__smallOne" href="#MechanicalDesign">3.2 Mechanical Design of the Vehicle</a>
-  <a class="sidebar__smallTwo" href="#MechanicalDesignProcess">3.2.1 Mechanical Design Process</a>
-  <a class="sidebar__smallTwo" href="#Materials">3.2.2 Materials</a>
-  <a class="sidebar__smallTwo" href="#ProductionMethods">3.2.3 Production methods</a>
-  <a class="sidebar__smallTwo" href="#PhysicalProperties">3.2.4 Physical Properties</a>
-  <a class="sidebar__smallOne" href="#ElectronicDesign"
-    >3.3 Electronic Design, Algorithm and Software Design</a
-  >
-  <a class="sidebar__smallTwo" href="#ElectronicDesignProcess">3.3.1 Electronic Design Process</a>
-  <a class="sidebar__smallThree" href="#PowerSupply">3.3.1.1 Power supply</a>
-  <a class="sidebar__smallThree" href="#LogicControl">3.3.1.2 Logic control and circuits</a>
-  <a class="sidebar__smallThree" href="#Sensors">3.3.1.3 Sensors</a>
-  <a class="sidebar__smallThree" href="#Communication">3.3.1.4 Communication</a>
-  <a class="sidebar__smallThree" href="#VisionSystem">3.3.1.5 Vision system</a>
-  <a class="sidebar__smallTwo" href="#AlgorithmDesign">3.3.2. Algorithm Design Process</a>
-  <a class="sidebar__smallTwo" href="#SoftwareDesign">3.3.3. Software Design Process</a>
-  <a class="sidebar__smallOne" href="#ExternalInterfaces">3.4. External Interfaces</a>
+  <a use:scrollto={'#ReportSummary'}>1. Report Summary</a>
+  <a use:scrollto={'#OrganizationChart'}>2. Organization Chart and Task Distribution</a>
+  <a use:scrollto={'#VehicleDesign'}>3. Vehicle Design</a>
+  <a class="sidebar__smallOne" use:scrollto={'#SystemDesign'}>3.1 System Design</a>
+  <a class="sidebar__smallOne" use:scrollto={'#MechanicalDesign'}>3.2 Mechanical Design of the Vehicle</a>
+  <a class="sidebar__smallTwo" use:scrollto={'#MechanicalDesignProcess'}>3.2.1 Mechanical Design Process</a>
+  <a class="sidebar__smallTwo" use:scrollto={'#Materials'}>3.2.2 Materials</a>
+  <a class="sidebar__smallTwo" use:scrollto={'#ProductionMethods'}>3.2.3 Production methods</a>
+  <a class="sidebar__smallTwo" use:scrollto={'#PhysicalProperties'}>3.2.4 Physical Properties</a>
+  <a class="sidebar__smallOne" use:scrollto={'h#ElectronicDesign'}>3.3 Electronic Design, Algorithm and Software Design</a>
+  <a class="sidebar__smallTwo" use:scrollto={'#ElectronicDesignProcess'}>3.3.1 Electronic Design Process</a>
+  <a class="sidebar__smallThree" use:scrollto={'#PowerSupply'}>3.3.1.1 Power supply</a>
+  <a class="sidebar__smallThree" use:scrollto={'#LogicControl'}>3.3.1.2 Logic control and circuits</a>
+  <a class="sidebar__smallThree" use:scrollto={'#Sensors'}>3.3.1.3 Sensors</a>
+  <a class="sidebar__smallThree" use:scrollto={'#Communication'}>3.3.1.4 Communication</a>
+  <a class="sidebar__smallThree" use:scrollto={'#VisionSystem'}>3.3.1.5 Vision system</a>
+  <a class="sidebar__smallTwo" use:scrollto={'#AlgorithmDesign'}>3.3.2. Algorithm Design Process</a>
+  <a class="sidebar__smallTwo" use:scrollto={'#SoftwareDesign'}>3.3.3. Software Design Process</a>
+  <a class="sidebar__smallOne" use:scrollto={'#ExternalInterfaces'}>3.4. External Interfaces</a>
   <a href="#Security">4. Security</a>
 </div>
 
@@ -617,6 +616,7 @@
     color: #fff8e7;
     padding: 5px;
     text-decoration: none;
+    cursor: pointer;
   }
 
   .sidebar a:hover {
