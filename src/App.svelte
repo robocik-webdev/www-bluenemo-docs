@@ -23,7 +23,7 @@
   <a class="sidebar__smallTwo" use:scrollto={'#AlgorithmDesign'}>3.3.2. Algorithm Design Process</a>
   <a class="sidebar__smallTwo" use:scrollto={'#SoftwareDesign'}>3.3.3. Software Design Process</a>
   <a class="sidebar__smallOne" use:scrollto={'#ExternalInterfaces'}>3.4. External Interfaces</a>
-  <a href="#Security">4. Security</a>
+  <a use:scrollto={'#Security'}>4. Security</a>
 </div>
 
 <div class="content">
@@ -68,7 +68,10 @@
   </figure>
   <h3 id="VehicleDesign">3. Vehicle Design</h3>
   <h4 id="SystemDesign">3.1 System Design</h4>
-  <p>??????????????</p>
+  <figure>
+    <img src="rsc/3.jpg" alt="3" />
+    <figcaption>Fig.2 - hopefully its only a tmp img</figcaption>
+  </figure>
   <!-- to który render w końcu ???? -->
   <h4 id="MechanicalDesign">3.2 Mechanical Design of the Vehicle</h4>
   <h5 id="MechanicalDesignProcess">3.2.1 Mechanical Design Process</h5>
@@ -165,7 +168,7 @@
   </p>
   <figure>
     <img src="{img}/gripper_crossection.jpg" alt="gripper crossection" />
-    <figcaption>Fig.10 - Mechanical gripper render</figcaption>
+    <figcaption>Fig.10 - Mechanical gripper render/ tmp pic?</figcaption>
   </figure>
 
   <!-- inne zdjęcie niż w docxie-->
@@ -591,6 +594,7 @@
   }
 
   figcaption {
+    margin-top: 5px;
     text-align: center;
   }
 
