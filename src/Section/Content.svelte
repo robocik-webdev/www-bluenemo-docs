@@ -250,6 +250,11 @@
       font-size: 0.75em;
     }
 
+    p,
+    li {
+      margin-left: 3%;
+    }
+
     figure {
       margin: 7% 0 7% 0;
     }

@@ -15,3 +15,5 @@ export const lang = derived(
   },
   {}
 );
+
+//zgadza się, ukradłem, ale tylko frajer by nie skorzystał
