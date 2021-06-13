@@ -251,11 +251,11 @@
     }
 
     figure {
-      margin: 35px 0px 35px 0;
+      margin: 7% 0 7% 0;
     }
 
     figcaption {
-      margin-top: 10px;
+      margin-top: 1.5%;
       text-align: center;
     }
 
@@ -269,7 +269,7 @@
     div.content {
       margin-left: 30%;
       margin-right: 30%;
-      padding: 1px 5px;
+      padding: 0.5% 1.5px;
     }
   }
 </style>

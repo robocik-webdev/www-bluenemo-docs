@@ -63,7 +63,7 @@
     .sidebar {
       margin: 0;
       padding: 0;
-      width: 300px;
+      width: 30%;
       background-color: #132142;
       position: fixed;
       height: auto;
@@ -73,7 +73,7 @@
     .sidebar a {
       display: block;
       color: #fff8e7;
-      padding: 5px;
+      padding: 2%;
       text-decoration: none;
       cursor: pointer;
     }
@@ -85,17 +85,17 @@
 
     .sidebar__smallOne {
       font-size: 0.9em;
-      margin-left: 10px;
+      margin-left: 3%;
     }
 
     .sidebar__smallTwo {
       font-size: 0.8em;
-      margin-left: 20px;
+      margin-left: 6%;
     }
 
     .sidebar__smallThree {
       font-size: 0.7em;
-      margin-left: 30px;
+      margin-left: 9%;
     }
   }
 </style>
