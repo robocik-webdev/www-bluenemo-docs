@@ -1,6 +1,6 @@
 <script>
-    import { scrollto } from 'svelte-scrollto';
-    import { lang } from '../content.js';
+  import { scrollto } from 'svelte-scrollto';
+  import { lang } from '../content.js';
 </script>
 
 <div class="sidebar">
@@ -59,41 +59,43 @@
 </div>
 
 <style>
-  .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 300px;
-    background-color: #132142;
-    position: fixed;
-    height: auto;
-    overflow: auto;
-  }
+  @media only screen and (min-width: 1281px) {
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 300px;
+      background-color: #132142;
+      position: fixed;
+      height: auto;
+      overflow: auto;
+    }
 
-  .sidebar a {
-    display: block;
-    color: #fff8e7;
-    padding: 5px;
-    text-decoration: none;
-    cursor: pointer;
-  }
+    .sidebar a {
+      display: block;
+      color: #fff8e7;
+      padding: 5px;
+      text-decoration: none;
+      cursor: pointer;
+    }
 
-  .sidebar a:hover {
-    background-color: #17274d;
-    color: #ffffff;
-  }
+    .sidebar a:hover {
+      background-color: #17274d;
+      color: #ffffff;
+    }
 
-  .sidebar__smallOne {
-    font-size: 0.9em;
-    margin-left: 10px;
-  }
+    .sidebar__smallOne {
+      font-size: 0.9em;
+      margin-left: 10px;
+    }
 
-  .sidebar__smallTwo {
-    font-size: 0.8em;
-    margin-left: 20px;
-  }
+    .sidebar__smallTwo {
+      font-size: 0.8em;
+      margin-left: 20px;
+    }
 
-  .sidebar__smallThree {
-    font-size: 0.7em;
-    margin-left: 30px;
+    .sidebar__smallThree {
+      font-size: 0.7em;
+      margin-left: 30px;
+    }
   }
 </style>

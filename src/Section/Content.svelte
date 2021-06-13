@@ -1,17 +1,19 @@
 <script>
-    import { lang } from '../content.js'
-    let img = 'rsc/images';
+  import { lang } from '../content.js';
+  let img = 'rsc/images';
 </script>
 
 <div class="content">
   <h3 id="ReportSummary">{$lang.reportsummaryHeader}</h3>
   <p>{@html $lang.reportsummaryContent}</p>
+  <hr />
   <h3 id="OrganizationChart">{$lang.organizationchartHeader}</h3>
   <p>{@html $lang.organizationchartContent}</p>
   <figure>
     <img src="{img}/diagram_management.png" alt="Organization chart" />
     <figcaption>Fig.1 - Organization Chart</figcaption>
   </figure>
+  <hr />
   <h3 id="VehicleDesign">{$lang.vechicledesignHeader}</h3>
   <h4 id="SystemDesign">{$lang.systemdesignHeader}</h4>
   <figure>
@@ -19,6 +21,7 @@
     <figcaption>Fig.2 - hopefully its only a tmp img</figcaption>
   </figure>
   <!-- to który render w końcu ???? -->
+  <hr />
   <h4 id="MechanicalDesign">{$lang.mechanicaldesignHeader}</h4>
   <h5 id="MechanicalDesignProcess">{$lang.mechanicaldesignprocessHeader}</h5>
   <p>{@html $lang.mechanicaldesignprocessContent}</p>
@@ -38,6 +41,7 @@
     <img src="rsc/2.jpg" alt="2" />
     <figcaption>Fig.6 - BlueNemo renders</figcaption>
   </figure>
+  <hr />
   <h5 id="Materials">{$lang.materialsHeader}</h5>
   <p>{@html $lang.materialsContent1}</p>
 
@@ -85,11 +89,14 @@
     <figcaption>Fig.12 - BLDC T200 Thruster.</figcaption>
   </figure>
 
+  <hr />
   <h5 id="ProductionMethods">{$lang.productionmethodsHeader}</h5>
   <p>{@html $lang.productionmethodsContent}</p>
 
+  <hr />
   <h5 id="PhysicalProperties">{$lang.physicalpropertiesHeader}</h5>
   <p>{@html $lang.physicalpropertiesContent}</p>
+  <hr />
   <h4 id="ElectronicDesign">
     {$lang.electronicdesignHeader}
   </h4>
@@ -110,7 +117,7 @@
     />
     <figcaption>Fig.13 - Electronics block diagram</figcaption>
   </figure>
-
+  <hr />
   <h6 id="PowerSupply">{$lang.powersupplyHeader}</h6>
   <p>{@html $lang.powersupplyContent1}</p>
   <ul>
@@ -128,6 +135,7 @@
   </figure>
 
   <p>{@html $lang.powersupplyContent3}</p>
+  <hr />
   <h6 id="LogicControll">{$lang.logiccontrolHeader}</h6>
   <p>{@html $lang.logiccontrolContent1}</p>
   <figure>
@@ -140,7 +148,7 @@
     <img src="{img}/board_xavier.png" alt="xavier" />
     <figcaption>Fig.16 - NVIDIA Jetson AGX Xavier render</figcaption>
   </figure>
-
+  <hr />
   <h6 id="Sensors">{$lang.sensorsHeader}</h6>
   <p>{@html $lang.sensorsContent1}</p>
   <figure>
@@ -157,15 +165,17 @@
   </figure>
 
   <p>{@html $lang.sensorsContent3}</p>
+  <hr />
   <h6 id="Communication">{$lang.communicationHeader}</h6>
   <p>{@html $lang.communicationContent}</p>
+  <hr />
   <h6 id="VisionSystem">{$lang.visionsystemHeader}</h6>
   <p>{@html $lang.visionsystemContent}</p>
   <figure>
     <img src="{img}/module_led.png" alt="led" />
     <figcaption>Fig.19 - Lumen Light R2 module</figcaption>
   </figure>
-
+  <hr />
   <h5 id="AlgorithmDesign">{$lang.algorithmdesignHeader}</h5>
   <p>{@html $lang.algorithmdesignContent}</p>
   <figure>
@@ -176,6 +186,7 @@
       detection using OpenCV
     </figcaption>
   </figure>
+  <hr />
   <h5 id="SoftwareDesign">{$lang.softwaredesignHeader}s</h5>
   <p>{@html $lang.softwaredesignContent}</p>
   <figure>
@@ -186,7 +197,7 @@
       virtual machine running it
     </figcaption>
   </figure>
-
+  <hr />
   <h4 id="ExternalInterfaces">{$lang.externalinterfacesHeader}</h4>
   <p>{@html $lang.externalinterfacesContent1}</p>
   <figure>
@@ -220,6 +231,7 @@
   </figure>
 
   <p>{@html $lang.externalinterfacesContent5}</p>
+  <hr />
   <h3 id="Security">{$lang.securityHeader}</h3>
   <p>{@html $lang.securityContent1}</p>
   <figure>
@@ -231,31 +243,33 @@
 </div>
 
 <style>
-  p,
-  li,
-  figure {
-    font-size: 0.75em;
-  }
+  @media only screen and (min-width: 1281px) {
+    p,
+    li,
+    figure {
+      font-size: 0.75em;
+    }
 
-  figure {
-    margin: 35px 0px 35px 0;
-  }
+    figure {
+      margin: 35px 0px 35px 0;
+    }
 
-  figcaption {
-    margin-top: 10px;
-    text-align: center;
-  }
+    figcaption {
+      margin-top: 10px;
+      text-align: center;
+    }
 
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
 
-  div.content {
-    margin-left: 300px;
-    margin-right: 250px;
-    padding: 1px 5px;
+    div.content {
+      margin-left: 30%;
+      margin-right: 30%;
+      padding: 1px 5px;
+    }
   }
 </style>

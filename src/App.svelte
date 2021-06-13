@@ -1,6 +1,6 @@
 <script>
-  import Sidebar from './Components/Sidebar.svelte'
-  import Content from './Components/Content.svelte';
+  import Sidebar from './Section/Sidebar.svelte'
+  import Content from './Section/Content.svelte';
 </script>
 
 <Sidebar />
