@@ -4,58 +4,92 @@
 </script>
 
 <div class="sidebar">
-  <a use:scrollto={'#ReportSummary'}>{$lang.reportsummaryHeader}</a>
-  <a use:scrollto={'#OrganizationChart'}>{$lang.organizationchartHeader}</a>
-  <a use:scrollto={'#VehicleDesign'}>{$lang.vechicledesignHeader}</a>
-  <a class="sidebar__smallOne" use:scrollto={'#SystemDesign'}
-    >{$lang.systemdesignHeader}</a
+  <li role="button" use:scrollto={'#ReportSummary'}>
+    {$lang.reportsummaryHeader}
+  </li>
+  <li role="button" use:scrollto={'#OrganizationChart'}>
+    {$lang.organizationchartHeader}
+  </li>
+  <li role="button" use:scrollto={'#VehicleDesign'}>
+    {$lang.vechicledesignHeader}
+  </li>
+  <li role="button" class="sidebar__smallOne" use:scrollto={'#SystemDesign'}>
+    {$lang.systemdesignHeader}
+  </li>
+  <li
+    role="button"
+    class="sidebar__smallOne"
+    use:scrollto={'#MechanicalDesign'}
   >
-  <a class="sidebar__smallOne" use:scrollto={'#MechanicalDesign'}
-    >{$lang.mechanicaldesignHeader}</a
+    {$lang.mechanicaldesignHeader}
+  </li>
+  <li
+    role="button"
+    class="sidebar__smallTwo"
+    use:scrollto={'#MechanicalDesignProcess'}
   >
-  <a class="sidebar__smallTwo" use:scrollto={'#MechanicalDesignProcess'}
-    >{$lang.mechanicaldesignprocessHeader}</a
+    {$lang.mechanicaldesignprocessHeader}
+  </li>
+  <li role="button" class="sidebar__smallTwo" use:scrollto={'#Materials'}>
+    {$lang.materialsHeader}
+  </li>
+  <li
+    role="button"
+    class="sidebar__smallTwo"
+    use:scrollto={'#ProductionMethods'}
   >
-  <a class="sidebar__smallTwo" use:scrollto={'#Materials'}
-    >{$lang.materialsHeader}</a
+    {$lang.productionmethodsHeader}
+  </li>
+  <li
+    role="button"
+    class="sidebar__smallTwo"
+    use:scrollto={'#PhysicalProperties'}
   >
-  <a class="sidebar__smallTwo" use:scrollto={'#ProductionMethods'}
-    >{$lang.productionmethodsHeader}</a
+    {$lang.physicalpropertiesHeader}
+  </li>
+  <li
+    role="button"
+    class="sidebar__smallOne"
+    use:scrollto={'#ElectronicDesign'}
   >
-  <a class="sidebar__smallTwo" use:scrollto={'#PhysicalProperties'}
-    >{$lang.physicalpropertiesHeader}</a
+    {$lang.electronicdesignHeader}
+  </li>
+  <li
+    role="button"
+    class="sidebar__smallTwo"
+    use:scrollto={'#ElectronicDesignProcess'}
   >
-  <a class="sidebar__smallOne" use:scrollto={'#ElectronicDesign'}
-    >{$lang.electronicdesignHeader}</a
+    {$lang.electronicdesignprocessHeader}
+  </li>
+  <li role="button" class="sidebar__smallThree" use:scrollto={'#PowerSupply'}>
+    {$lang.powersupplyHeader}
+  </li>
+  <li role="button" class="sidebar__smallThree" use:scrollto={'#LogicControl'}>
+    {$lang.logiccontrolHeader}
+  </li>
+  <li role="button" class="sidebar__smallThree" use:scrollto={'#Sensors'}>
+    {$lang.sensorsHeader}
+  </li>
+  <li role="button" class="sidebar__smallThree" use:scrollto={'#Communication'}>
+    {$lang.communicationHeader}
+  </li>
+  <li role="button" class="sidebar__smallThree" use:scrollto={'#VisionSystem'}>
+    {$lang.visionsystemHeader}
+  </li>
+  <li role="button" class="sidebar__smallTwo" use:scrollto={'#AlgorithmDesign'}>
+    {$lang.algorithmdesignHeader}
+  </li>
+  <li role="button" class="sidebar__smallTwo" use:scrollto={'#SoftwareDesign'}>
+    {$lang.softwaredesignHeader}
+  </li>
+  <li
+    role="button"
+    class="sidebar__smallOne"
+    use:scrollto={'#ExternalInterfaces'}
   >
-  <a class="sidebar__smallTwo" use:scrollto={'#ElectronicDesignProcess'}
-    >{$lang.electronicdesignprocessHeader}</a
-  >
-  <a class="sidebar__smallThree" use:scrollto={'#PowerSupply'}
-    >{$lang.powersupplyHeader}</a
-  >
-  <a class="sidebar__smallThree" use:scrollto={'#LogicControl'}
-    >{$lang.logiccontrolHeader}</a
-  >
-  <a class="sidebar__smallThree" use:scrollto={'#Sensors'}
-    >{$lang.sensorsHeader}</a
-  >
-  <a class="sidebar__smallThree" use:scrollto={'#Communication'}
-    >{$lang.communicationHeader}</a
-  >
-  <a class="sidebar__smallThree" use:scrollto={'#VisionSystem'}
-    >{$lang.visionsystemHeader}</a
-  >
-  <a class="sidebar__smallTwo" use:scrollto={'#AlgorithmDesign'}
-    >{$lang.algorithmdesignHeader}</a
-  >
-  <a class="sidebar__smallTwo" use:scrollto={'#SoftwareDesign'}
-    >{$lang.softwaredesignHeader}</a
-  >
-  <a class="sidebar__smallOne" use:scrollto={'#ExternalInterfaces'}
-    >{$lang.externalinterfacesHeader}</a
-  >
-  <a use:scrollto={'#Security'}>{$lang.securityHeader}</a>
+    {$lang.externalinterfacesHeader}
+  </li>
+  <li role="button" use:scrollto={'#Security'}>{$lang.securityHeader}</li>
 </div>
 
 <style>
@@ -70,7 +104,7 @@
       overflow: auto;
     }
 
-    .sidebar a {
+    .sidebar li {
       display: block;
       color: #fff8e7;
       padding: 2%;
@@ -78,7 +112,7 @@
       cursor: pointer;
     }
 
-    .sidebar a:hover {
+    .sidebar li:hover {
       background-color: #17274d;
       color: #ffffff;
     }
