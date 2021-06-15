@@ -243,7 +243,7 @@
 </div>
 
 <style>
-  @media only screen and (min-width: 1281px) {
+  @media (min-width: 1025px) { 
     p,
     li,
     figure {
@@ -274,6 +274,41 @@
     div.content {
       margin-left: 30%;
       margin-right: 30%;
+      padding: 0.5% 1.5px;
+    }
+  }
+
+  @media (max-width: 1024px){
+    p,
+    li,
+    figure {
+      font-size: 0.75em;
+    }
+
+    p,
+    li {
+      margin-left: 3%;
+    }
+
+    figure {
+      margin: 7% 0 7% 0;
+    }
+
+    figcaption {
+      margin-top: 1.5%;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+
+    div.content {
+      margin-left: 10%;
+      margin-right: 10%;
       padding: 0.5% 1.5px;
     }
   }

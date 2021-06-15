@@ -1,6 +1,7 @@
 <script>
   import { scrollto } from 'svelte-scrollto';
   import { lang } from '../content.js';
+
 </script>
 
 <div class="sidebar">
@@ -93,7 +94,7 @@
 </div>
 
 <style>
-  @media only screen and (min-width: 1281px) {
+  @media (min-width: 1025px) {
     .sidebar {
       margin: 0;
       padding: 0;
@@ -102,6 +103,7 @@
       position: fixed;
       height: auto;
       overflow: auto;
+      display:0;/* ignore for the time being */
     }
 
     .sidebar li {
@@ -130,6 +132,12 @@
     .sidebar__smallThree {
       font-size: 0.7em;
       margin-left: 9%;
+    }
+  }
+  
+  @media (max-width: 1024px){
+    .sidebar{
+      display:none;
     }
   }
 </style>
