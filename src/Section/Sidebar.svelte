@@ -1,7 +1,6 @@
 <script>
   import { scrollto } from 'svelte-scrollto';
   import { lang } from '../content.js';
-
 </script>
 
 <div class="sidebar">
@@ -98,12 +97,11 @@
     .sidebar {
       margin: 0;
       padding: 0;
-      width: 30%;
+      width: 25%;
       background-color: #132142;
       position: fixed;
       height: auto;
       overflow: auto;
-      display:0;/* ignore for the time being */
     }
 
     .sidebar li {
@@ -112,6 +110,7 @@
       padding: 2%;
       text-decoration: none;
       cursor: pointer;
+      margin-right: 25%;
     }
 
     .sidebar li:hover {
@@ -134,10 +133,10 @@
       margin-left: 9%;
     }
   }
-  
-  @media (max-width: 1024px){
-    .sidebar{
-      display:none;
+
+  @media (max-width: 1024px) {
+    .sidebar {
+      display: none;
     }
   }
 </style>
