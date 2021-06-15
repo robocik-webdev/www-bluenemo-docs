@@ -1,9 +1,22 @@
 <script>
   import { scrollto } from 'svelte-scrollto';
   import { lang } from '../content.js';
+  import { fly } from 'svelte/transition';
+
+  let menu=false;
+
+  function menuCfg(){
+    if(!menu){
+      menu=true;
+    } else {menu=false;}
+  }
+
 </script>
 
-<div class="sidebar">
+<img class="lenny" src="rsc/tmp.png" alt="( ͡° ͜ʖ ͡°)" on:click={menuCfg}/>
+
+{#if menu}
+<div class="sidebar" in:fly="{{x:-200, duration:1500}}" out:fly="{{x:-200, duration:1500}}">
   <li role="button" use:scrollto={'#ReportSummary'}>
     {$lang.reportsummaryHeader}
   </li>
@@ -91,6 +104,7 @@
   </li>
   <li role="button" use:scrollto={'#Security'}>{$lang.securityHeader}</li>
 </div>
+{/if}
 
 <style>
   @media (min-width: 1025px) {
@@ -132,11 +146,56 @@
       font-size: 0.7em;
       margin-left: 9%;
     }
+
+    .lenny{
+      display: none;
+    }
   }
 
   @media (max-width: 1024px) {
     .sidebar {
-      display: none;
+      margin-top: 15%;
+      padding: 0;
+      width: 100%;
+      background-color: #132142;
+      position: fixed;
+      height: auto;
+      overflow: auto;
+    }
+
+    .sidebar li {
+      display: block;
+      color: #fff8e7;
+      padding: 2%;
+      text-decoration: none;
+      cursor: pointer;
+      margin-right: 25%;
+    }
+
+    .sidebar li:hover {
+      background-color: #17274d;
+      color: #ffffff;
+    }
+
+    .sidebar__smallOne {
+      font-size: 0.9em;
+      margin-left: 3%;
+    }
+
+    .sidebar__smallTwo {
+      font-size: 0.8em;
+      margin-left: 6%;
+    }
+
+    .sidebar__smallThree {
+      font-size: 0.7em;
+      margin-left: 9%;
+    }
+
+    .lenny{
+      position: fixed;
+      height: 5%;
+      width: 15%;
     }
   }
 </style>
