@@ -150,15 +150,14 @@
 
   @media (max-width: 1024px) {
     .sidebar {
-      margin-top: 15%;
       padding: 0;
       width: 100%;
       background-color: #132142;
       position: fixed;
-      height: auto;
       overflow: auto;
       transition-duration: 500ms;
       transform: translateX(-100%);
+      height: 100%;
     }
     .opened {
       transform: translateX(0);
@@ -167,10 +166,11 @@
     .sidebar li {
       display: block;
       color: #fff8e7;
-      padding: 2%;
+      padding: 1%;
       text-decoration: none;
       cursor: pointer;
       margin-right: 25%;
+      overflow: auto;
     }
 
     .sidebar li:hover {
