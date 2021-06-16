@@ -247,12 +247,12 @@
     p,
     li,
     figure {
-      font-size: 0.75em;
+      font-size: 0.8em;
     }
 
     p,
     li {
-      margin-left: 3%;
+      margin-left: 5%;
     }
 
     figure {
@@ -276,6 +276,17 @@
       margin-right: 25%;
       padding: 0.5% 1.5%;
     }
+    h4 {
+      margin-left: 2%;
+    }
+
+    h5 {
+      margin-left: 3%;
+    }
+
+    h6 {
+      margin-left: 4%;
+    }
   }
 
   @media (max-width: 1024px) {
@@ -287,7 +298,7 @@
 
     p,
     li {
-      margin-left: 3%;
+      margin-left: 5%;
     }
 
     figure {
@@ -307,9 +318,20 @@
     }
 
     div.content {
-      margin-left: 10%;
-      margin-right: 10%;
+      margin-left: 5%;
+      margin-right: 5%;
       padding: 0.5% 1.5%;
+    }
+    h4 {
+      margin-left: 2%;
+    }
+
+    h5 {
+      margin-left: 3%;
+    }
+
+    h6 {
+      margin-left: 4%;
     }
   }
 </style>

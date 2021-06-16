@@ -1,22 +1,19 @@
 <script>
   import { scrollto } from 'svelte-scrollto';
   import { lang } from '../content.js';
-  import { fly } from 'svelte/transition';
+  import { hidden } from '../header.js';
+  import { opened } from '../sidebar.js';
 
-  let menu=false;
+  $: if ($hidden) $opened = false;
 
-  function menuCfg(){
-    if(!menu){
-      menu=true;
-    } else {menu=false;}
+  function showSidebar() {
+    $opened = !$opened;
   }
-
 </script>
 
-<img class="lenny" src="rsc/tmp.png" alt="( ͡° ͜ʖ ͡°)" on:click={menuCfg}/>
+<img class="lenny" src="rsc/tmp.png" alt="( ͡° ͜ʖ ͡°)" on:click={showSidebar} />
 
-{#if menu}
-<div class="sidebar" in:fly="{{x:-200, duration:1500}}" out:fly="{{x:-200, duration:1500}}">
+<div class="sidebar" class:opened={$opened} on:click={showSidebar}>
   <li role="button" use:scrollto={'#ReportSummary'}>
     {$lang.reportsummaryHeader}
   </li>
@@ -104,7 +101,6 @@
   </li>
   <li role="button" use:scrollto={'#Security'}>{$lang.securityHeader}</li>
 </div>
-{/if}
 
 <style>
   @media (min-width: 1025px) {
@@ -147,7 +143,7 @@
       margin-left: 9%;
     }
 
-    .lenny{
+    .lenny {
       display: none;
     }
   }
@@ -161,6 +157,11 @@
       position: fixed;
       height: auto;
       overflow: auto;
+      transition-duration: 500ms;
+      transform: translateX(-100%);
+    }
+    .opened {
+      transform: translateX(0);
     }
 
     .sidebar li {
@@ -192,7 +193,7 @@
       margin-left: 9%;
     }
 
-    .lenny{
+    .lenny {
       position: fixed;
       height: 5%;
       width: 15%;
