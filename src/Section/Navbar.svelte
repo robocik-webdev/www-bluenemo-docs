@@ -5,7 +5,6 @@
   <div class="navbar-list">
     <ul><li role="button">Main page</li></ul>
   </div>
-
 </div>
 
 <style>

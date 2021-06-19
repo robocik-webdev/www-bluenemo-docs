@@ -85,7 +85,11 @@
 
   <p>{@html $lang.materialsContent5}</p>
   <figure>
-    <img src="{img}/rov_thruster.webp" alt="rov thruster" style="height:25%;width:25%;"/>
+    <img
+      src="{img}/rov_thruster.webp"
+      alt="rov thruster"
+      style="height:25%;width:25%;"
+    />
     <figcaption>Fig.12 - BLDC T200 Thruster.</figcaption>
   </figure>
 
@@ -152,13 +156,21 @@
   <h6 id="Sensors">{$lang.sensorsHeader}</h6>
   <p>{@html $lang.sensorsContent1}</p>
   <figure>
-    <img src="{img}/module_dvl.webp" alt="wayfinder dvl" style="height:25%;width:25%;"/>
+    <img
+      src="{img}/module_dvl.webp"
+      alt="wayfinder dvl"
+      style="height:25%;width:25%;"
+    />
     <figcaption>Fig.17 - Teledyne Marine "Wayfinder DVL"</figcaption>
   </figure>
 
   <p>{@html $lang.sensorsContent2}</p>
   <figure>
-    <img src="{img}/board_hydrophones.webp" alt="hydrophones modules pcb" style="height:35%;width:35%;"/>
+    <img
+      src="{img}/board_hydrophones.webp"
+      alt="hydrophones modules pcb"
+      style="height:35%;width:35%;"
+    />
     <figcaption>
       Fig.18 - Circuit board render of hydrophones modules
     </figcaption>
@@ -172,7 +184,7 @@
   <h6 id="VisionSystem">{$lang.visionsystemHeader}</h6>
   <p>{@html $lang.visionsystemContent}</p>
   <figure>
-    <img src="{img}/module_led.webp" alt="led" style="height:25%;width:25%;"/>
+    <img src="{img}/module_led.webp" alt="led" style="height:25%;width:25%;" />
     <figcaption>Fig.19 - Lumen Light R2 module</figcaption>
   </figure>
   <hr />

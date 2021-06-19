@@ -149,7 +149,7 @@
       color: #ffffff;
     }
 
-    .sidebar-test{
+    .sidebar-test {
       padding-left: 20px;
     }
 
@@ -199,7 +199,7 @@
     }
 
     .sidebar li:hover {
-      background-color: #17274d;
+      background-color: var(--text-color);
       color: #ffffff;
     }
 

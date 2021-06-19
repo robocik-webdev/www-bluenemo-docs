@@ -5,7 +5,7 @@
 </script>
 
 <Navbar />
-<br>
+<br />
 <Sidebar />
 <Content />
 
