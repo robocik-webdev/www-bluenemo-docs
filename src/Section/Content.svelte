@@ -275,6 +275,8 @@
       margin-left: 25%;
       margin-right: 25%;
       padding: 0.5% 1.5%;
+      text-align: justify;
+      text-justify: inter-word;
     }
     h4 {
       margin-left: 2%;

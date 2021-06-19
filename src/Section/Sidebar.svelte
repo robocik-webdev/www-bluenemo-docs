@@ -14,92 +14,114 @@
 <img class="lenny" src="rsc/tmp.png" alt="( ͡° ͜ʖ ͡°)" on:click={showSidebar} />
 
 <div class="sidebar" class:opened={$opened} on:click={showSidebar}>
-  <li role="button" use:scrollto={'#ReportSummary'}>
-    {$lang.reportsummaryHeader}
-  </li>
-  <li role="button" use:scrollto={'#OrganizationChart'}>
-    {$lang.organizationchartHeader}
-  </li>
-  <li role="button" use:scrollto={'#VehicleDesign'}>
-    {$lang.vechicledesignHeader}
-  </li>
-  <li role="button" class="sidebar__smallOne" use:scrollto={'#SystemDesign'}>
-    {$lang.systemdesignHeader}
-  </li>
-  <li
-    role="button"
-    class="sidebar__smallOne"
-    use:scrollto={'#MechanicalDesign'}
-  >
-    {$lang.mechanicaldesignHeader}
-  </li>
-  <li
-    role="button"
-    class="sidebar__smallTwo"
-    use:scrollto={'#MechanicalDesignProcess'}
-  >
-    {$lang.mechanicaldesignprocessHeader}
-  </li>
-  <li role="button" class="sidebar__smallTwo" use:scrollto={'#Materials'}>
-    {$lang.materialsHeader}
-  </li>
-  <li
-    role="button"
-    class="sidebar__smallTwo"
-    use:scrollto={'#ProductionMethods'}
-  >
-    {$lang.productionmethodsHeader}
-  </li>
-  <li
-    role="button"
-    class="sidebar__smallTwo"
-    use:scrollto={'#PhysicalProperties'}
-  >
-    {$lang.physicalpropertiesHeader}
-  </li>
-  <li
-    role="button"
-    class="sidebar__smallOne"
-    use:scrollto={'#ElectronicDesign'}
-  >
-    {$lang.electronicdesignHeader}
-  </li>
-  <li
-    role="button"
-    class="sidebar__smallTwo"
-    use:scrollto={'#ElectronicDesignProcess'}
-  >
-    {$lang.electronicdesignprocessHeader}
-  </li>
-  <li role="button" class="sidebar__smallThree" use:scrollto={'#PowerSupply'}>
-    {$lang.powersupplyHeader}
-  </li>
-  <li role="button" class="sidebar__smallThree" use:scrollto={'#LogicControl'}>
-    {$lang.logiccontrolHeader}
-  </li>
-  <li role="button" class="sidebar__smallThree" use:scrollto={'#Sensors'}>
-    {$lang.sensorsHeader}
-  </li>
-  <li role="button" class="sidebar__smallThree" use:scrollto={'#Communication'}>
-    {$lang.communicationHeader}
-  </li>
-  <li role="button" class="sidebar__smallThree" use:scrollto={'#VisionSystem'}>
-    {$lang.visionsystemHeader}
-  </li>
-  <li role="button" class="sidebar__smallTwo" use:scrollto={'#AlgorithmDesign'}>
-    {$lang.algorithmdesignHeader}
-  </li>
-  <li role="button" class="sidebar__smallTwo" use:scrollto={'#SoftwareDesign'}>
-    {$lang.softwaredesignHeader}
-  </li>
-  <li
-    role="button"
-    class="sidebar__smallOne"
-    use:scrollto={'#ExternalInterfaces'}
-  >
-    {$lang.externalinterfacesHeader}
-  </li>
-  <li role="button" use:scrollto={'#Security'}>{$lang.securityHeader}</li>
+  <div class="sidebar-test">
+    <li role="button" use:scrollto={'#ReportSummary'}>
+      {$lang.reportsummaryHeader}
+    </li>
+    <li role="button" use:scrollto={'#OrganizationChart'}>
+      {$lang.organizationchartHeader}
+    </li>
+    <li role="button" use:scrollto={'#VehicleDesign'}>
+      {$lang.vechicledesignHeader}
+    </li>
+    <li role="button" class="sidebar__smallOne" use:scrollto={'#SystemDesign'}>
+      {$lang.systemdesignHeader}
+    </li>
+    <li
+      role="button"
+      class="sidebar__smallOne"
+      use:scrollto={'#MechanicalDesign'}
+    >
+      {$lang.mechanicaldesignHeader}
+    </li>
+    <li
+      role="button"
+      class="sidebar__smallTwo"
+      use:scrollto={'#MechanicalDesignProcess'}
+    >
+      {$lang.mechanicaldesignprocessHeader}
+    </li>
+    <li role="button" class="sidebar__smallTwo" use:scrollto={'#Materials'}>
+      {$lang.materialsHeader}
+    </li>
+    <li
+      role="button"
+      class="sidebar__smallTwo"
+      use:scrollto={'#ProductionMethods'}
+    >
+      {$lang.productionmethodsHeader}
+    </li>
+    <li
+      role="button"
+      class="sidebar__smallTwo"
+      use:scrollto={'#PhysicalProperties'}
+    >
+      {$lang.physicalpropertiesHeader}
+    </li>
+    <li
+      role="button"
+      class="sidebar__smallOne"
+      use:scrollto={'#ElectronicDesign'}
+    >
+      {$lang.electronicdesignHeader}
+    </li>
+    <li
+      role="button"
+      class="sidebar__smallTwo"
+      use:scrollto={'#ElectronicDesignProcess'}
+    >
+      {$lang.electronicdesignprocessHeader}
+    </li>
+    <li role="button" class="sidebar__smallThree" use:scrollto={'#PowerSupply'}>
+      {$lang.powersupplyHeader}
+    </li>
+    <li
+      role="button"
+      class="sidebar__smallThree"
+      use:scrollto={'#LogicControl'}
+    >
+      {$lang.logiccontrolHeader}
+    </li>
+    <li role="button" class="sidebar__smallThree" use:scrollto={'#Sensors'}>
+      {$lang.sensorsHeader}
+    </li>
+    <li
+      role="button"
+      class="sidebar__smallThree"
+      use:scrollto={'#Communication'}
+    >
+      {$lang.communicationHeader}
+    </li>
+    <li
+      role="button"
+      class="sidebar__smallThree"
+      use:scrollto={'#VisionSystem'}
+    >
+      {$lang.visionsystemHeader}
+    </li>
+    <li
+      role="button"
+      class="sidebar__smallTwo"
+      use:scrollto={'#AlgorithmDesign'}
+    >
+      {$lang.algorithmdesignHeader}
+    </li>
+    <li
+      role="button"
+      class="sidebar__smallTwo"
+      use:scrollto={'#SoftwareDesign'}
+    >
+      {$lang.softwaredesignHeader}
+    </li>
+    <li
+      role="button"
+      class="sidebar__smallOne"
+      use:scrollto={'#ExternalInterfaces'}
+    >
+      {$lang.externalinterfacesHeader}
+    </li>
+    <li role="button" use:scrollto={'#Security'}>{$lang.securityHeader}</li>
+  </div>
 </div>
 
 <style>
@@ -108,7 +130,7 @@
       margin: 0;
       padding: 0;
       width: 25%;
-      background-color: #132142;
+      background-color: var(--background-color);
       position: fixed;
       height: auto;
       overflow: auto;
@@ -116,16 +138,19 @@
 
     .sidebar li {
       display: block;
-      color: #fff8e7;
+      color: var(--text-color);
       padding: 2%;
       text-decoration: none;
       cursor: pointer;
-      margin-right: 25%;
     }
 
     .sidebar li:hover {
       background-color: #17274d;
       color: #ffffff;
+    }
+
+    .sidebar-test{
+      padding-left: 20px;
     }
 
     .sidebar__smallOne {
@@ -152,7 +177,7 @@
     .sidebar {
       padding: 0;
       width: 100%;
-      background-color: #132142;
+      background-color: var(--background-color);
       position: fixed;
       overflow: auto;
       transition-duration: 500ms;
@@ -165,7 +190,7 @@
 
     .sidebar li {
       display: block;
-      color: #fff8e7;
+      color: var(--text-color);
       padding: 1%;
       text-decoration: none;
       cursor: pointer;
