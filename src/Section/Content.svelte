@@ -10,14 +10,14 @@
   <h3 id="OrganizationChart">{$lang.organizationchartHeader}</h3>
   <p>{@html $lang.organizationchartContent}</p>
   <figure>
-    <img src="{img}/diagram_management.png" alt="Organization chart" />
+    <img src="{img}/diagram_management.webp" alt="Organization chart" />
     <figcaption>Fig.1 - Organization Chart</figcaption>
   </figure>
   <hr />
   <h3 id="VehicleDesign">{$lang.vechicledesignHeader}</h3>
   <h4 id="SystemDesign">{$lang.systemdesignHeader}</h4>
   <figure>
-    <img src="rsc/3.jpg" alt="3" />
+    <img src="rsc/3.webp" alt="3" />
     <figcaption>Fig.2 - hopefully its only a tmp img</figcaption>
   </figure>
   <!-- to który render w końcu ???? -->
@@ -26,19 +26,19 @@
   <h5 id="MechanicalDesignProcess">{$lang.mechanicaldesignprocessHeader}</h5>
   <p>{@html $lang.mechanicaldesignprocessContent}</p>
   <figure>
-    <img src="rsc/1.jpg" alt="1" />
+    <img src="rsc/1.webp" alt="1" />
     <figcaption>Fig.3 - Front view</figcaption>
   </figure>
   <figure>
-    <img src="rsc/3.jpg" alt="3" />
+    <img src="rsc/3.webp" alt="3" />
     <figcaption>Fig.4 - Top view</figcaption>
   </figure>
   <figure>
-    <img src="rsc/4.jpg" alt="4" />
+    <img src="rsc/4.webp" alt="4" />
     <figcaption>Fig.5 - Side view</figcaption>
   </figure>
   <figure>
-    <img src="rsc/2.jpg" alt="2" />
+    <img src="rsc/2.webp" alt="2" />
     <figcaption>Fig.6 - BlueNemo renders</figcaption>
   </figure>
   <hr />
@@ -46,7 +46,7 @@
   <p>{@html $lang.materialsContent1}</p>
 
   <figure>
-    <img src="{img}/forces_cylinder.png" alt="forces cylinder" />
+    <img src="{img}/forces_cylinder.webp" alt="forces cylinder" />
     <figcaption>
       Fig.7 - The chosen shape and material ensure ample resistance to
       hydrostatic pressure. The maximum stresses at a depth of 100 m are 26.5
@@ -56,7 +56,7 @@
 
   <p>{@html $lang.materialsContent2}</p>
   <figure>
-    <img src="{img}/forces_plate.png" alt="forces plate" />
+    <img src="{img}/forces_plate.webp" alt="forces plate" />
     <figcaption>
       Fig.8 - The chosen shape and material ensure average resistance to
       hydrostatic pressure. The maximum stresses at a depth of 100 m are 59.5
@@ -66,26 +66,26 @@
 
   <p>{@html $lang.materialsContent3}</p>
   <figure>
-    <img src="rsc/5.jpg" alt="outer skeleton" />
+    <img src="rsc/5.webp" alt="outer skeleton" />
     <figcaption>
       Fig.9 - The outer skeleton, i.e. the frame of the pressure chamber
     </figcaption>
   </figure>
   <p>{@html $lang.materialsContent4}</p>
   <figure>
-    <img src="{img}/gripper_crossection.jpg" alt="gripper crossection" />
+    <img src="{img}/gripper_crossection.webp" alt="gripper crossection" />
     <figcaption>Fig.10 - Mechanical gripper render/ tmp pic?</figcaption>
   </figure>
 
   <!-- inne zdjęcie niż w docxie-->
   <figure>
-    <img src="{img}/gripper_with_ball.png" alt="example gripper" />
+    <img src="{img}/gripper_with_ball.webp" alt="example gripper" />
     <figcaption>Fig.11 - Example use of the gripper</figcaption>
   </figure>
 
   <p>{@html $lang.materialsContent5}</p>
   <figure>
-    <img src="{img}/rov_thruster.png" alt="rov thruster" />
+    <img src="{img}/rov_thruster.webp" alt="rov thruster" style="height:25%;width:25%;"/>
     <figcaption>Fig.12 - BLDC T200 Thruster.</figcaption>
   </figure>
 
@@ -112,7 +112,7 @@
   <p>{@html $lang.electronicdesignprocessContent2}</p>
   <figure>
     <img
-      src="{img}/diagram_power_communication.png"
+      src="{img}/diagram_power_communication.webp"
       alt="electronics diagram"
     />
     <figcaption>Fig.13 - Electronics block diagram</figcaption>
@@ -128,7 +128,7 @@
 
   <p>{@html $lang.powersupplyContent2}</p>
   <figure>
-    <img src="{img}/board_thrusters.png" alt="powering motors pcb" />
+    <img src="{img}/board_thrusters.webp" alt="powering motors pcb" />
     <figcaption>
       Fig.14 - Proprietary PCB responsible for powering motors (bottom view)
     </figcaption>
@@ -139,26 +139,26 @@
   <h6 id="LogicControll">{$lang.logiccontrolHeader}</h6>
   <p>{@html $lang.logiccontrolContent1}</p>
   <figure>
-    <img src="{img}/board_controller.png" alt="board controllers" />
+    <img src="{img}/board_controller.webp" alt="board controllers" />
     <figcaption>Fig.15 - “ROV Controller” for STM32F767ZI</figcaption>
   </figure>
 
   <p>{@html $lang.logiccontrolContent2}</p>
   <figure>
-    <img src="{img}/board_xavier.png" alt="xavier" />
+    <img src="{img}/board_xavier.webp" alt="xavier" />
     <figcaption>Fig.16 - NVIDIA Jetson AGX Xavier render</figcaption>
   </figure>
   <hr />
   <h6 id="Sensors">{$lang.sensorsHeader}</h6>
   <p>{@html $lang.sensorsContent1}</p>
   <figure>
-    <img src="{img}/module_dvl.png" alt="wayfinder dvl" />
+    <img src="{img}/module_dvl.webp" alt="wayfinder dvl" style="height:25%;width:25%;"/>
     <figcaption>Fig.17 - Teledyne Marine "Wayfinder DVL"</figcaption>
   </figure>
 
   <p>{@html $lang.sensorsContent2}</p>
   <figure>
-    <img src="{img}/board_hydrophones.png" alt="hydrophones modules pcb" />
+    <img src="{img}/board_hydrophones.webp" alt="hydrophones modules pcb" style="height:35%;width:35%;"/>
     <figcaption>
       Fig.18 - Circuit board render of hydrophones modules
     </figcaption>
@@ -172,15 +172,15 @@
   <h6 id="VisionSystem">{$lang.visionsystemHeader}</h6>
   <p>{@html $lang.visionsystemContent}</p>
   <figure>
-    <img src="{img}/module_led.png" alt="led" />
+    <img src="{img}/module_led.webp" alt="led" style="height:25%;width:25%;"/>
     <figcaption>Fig.19 - Lumen Light R2 module</figcaption>
   </figure>
   <hr />
   <h5 id="AlgorithmDesign">{$lang.algorithmdesignHeader}</h5>
   <p>{@html $lang.algorithmdesignContent}</p>
   <figure>
-    <img src="{img}/camera_gate.png" alt="camera gate" />
-    <img src="{img}/camera_probably_edge_detection.png" alt="edge detecion" />
+    <img src="{img}/camera_gate.webp" alt="camera gate" />
+    <img src="{img}/camera_probably_edge_detection.webp" alt="edge detecion" />
     <figcaption>
       Fig.20 - Computer vision examples: gate detection using YOLO and path axis
       detection using OpenCV
@@ -190,7 +190,7 @@
   <h5 id="SoftwareDesign">{$lang.softwaredesignHeader}s</h5>
   <p>{@html $lang.softwaredesignContent}</p>
   <figure>
-    <img src="{img}/code_drop_marker.png" alt="code" />
+    <img src="{img}/code_drop_marker.webp" alt="code" />
 
     <figcaption>
       Fig.21 - On the left example task code, on the right debug view from the
@@ -201,7 +201,7 @@
   <h4 id="ExternalInterfaces">{$lang.externalinterfacesHeader}</h4>
   <p>{@html $lang.externalinterfacesContent1}</p>
   <figure>
-    <img src="{img}/diagram_modules.png" alt="diagram modules" />
+    <img src="{img}/diagram_modules.webp" alt="diagram modules" />
     <figcaption>
       Fig.22 - Structure of processing units, programs that they run and
       connected devices
@@ -210,7 +210,7 @@
 
   <p>{@html $lang.externalinterfacesContent2}</p>
   <figure>
-    <img src="{img}/camera_simulator_debug.png" alt="camera debug view" />
+    <img src="{img}/camera_simulator_debug.webp" alt="camera debug view" />
     <figcaption>
       Fig.23 - Debug view of the simulation showing exchanged data
     </figcaption>
@@ -218,7 +218,7 @@
 
   <p>{@html $lang.externalinterfacesContent3}</p>
   <figure>
-    <img src="{img}/camera_simulator_views.png" alt="camera views" />
+    <img src="{img}/camera_simulator_views.webp" alt="camera views" />
     <figcaption>
       Fig.24 - Samples from the dataset generated by the simulator program
     </figcaption>
@@ -226,7 +226,7 @@
 
   <p>{@html $lang.externalinterfacesContent4}</p>
   <figure>
-    <img src="{img}/diagram_software_layers.png" alt="diagram soft" />
+    <img src="{img}/diagram_software_layers.webp" alt="diagram soft" />
     <figcaption>Fig.25 - Structure of the controller web app</figcaption>
   </figure>
 
@@ -235,7 +235,7 @@
   <h3 id="Security">{$lang.securityHeader}</h3>
   <p>{@html $lang.securityContent1}</p>
   <figure>
-    <img src="{img}/battery_parameters.png" alt="battery parameters" />
+    <img src="{img}/battery_parameters.webp" alt="battery parameters" />
     <figcaption>Fig.26 - GRALMarine battery specification table</figcaption>
   </figure>
 
