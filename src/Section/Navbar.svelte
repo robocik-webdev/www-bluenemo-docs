@@ -33,6 +33,7 @@
       height: 55px;
       position: fixed;
       text-align: left;
+      display: block;
     }
   }
 

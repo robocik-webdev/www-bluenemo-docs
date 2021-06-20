@@ -18,7 +18,7 @@
   <h4 id="SystemDesign">{$lang.systemdesignHeader}</h4>
   <figure>
     <img src="{img}/3.webp" alt="3" />
-    <figcaption>Fig.2 - </figcaption>
+    <figcaption>Fig.2 -</figcaption>
   </figure>
   <!-- to który render w końcu ???? -->
   <hr />
@@ -66,7 +66,7 @@
 
   <p>{@html $lang.materialsContent3}</p>
   <figure>
-    <img src="rsc/5.webp" alt="outer skeleton" />
+    <img src="{img}/5.webp" alt="outer skeleton" />
     <figcaption>
       Fig.9 - The outer skeleton, i.e. the frame of the pressure chamber.
     </figcaption>
