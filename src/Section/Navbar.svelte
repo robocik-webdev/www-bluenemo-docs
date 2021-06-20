@@ -53,13 +53,6 @@
       cursor: pointer;
     }
 
-    .navbar--logo.opened {
-      width: 45px;
-      height: 100%;
-      margin-left: 5px;
-      cursor: pointer;
-    }
-
     div.navbar {
       background-color: var(--text-color);
       width: 100%;
