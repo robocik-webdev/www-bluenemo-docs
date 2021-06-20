@@ -125,7 +125,7 @@
 <style>
   @media (min-width: 1025px) {
     .sidebar {
-      margin-top: 55px;
+      margin-top: 32px;
       padding: 0;
       width: 25%;
       background-color: var(--background-color);
@@ -169,7 +169,7 @@
 
   @media (max-width: 1024px) {
     .sidebar {
-      margin-top: 55px;
+      margin-top: 32px;
       padding: 0;
       width: 100%;
       background-color: var(--background-color);
