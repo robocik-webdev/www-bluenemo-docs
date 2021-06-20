@@ -11,7 +11,7 @@
   <p>{@html $lang.organizationchartContent}</p>
   <figure>
     <img src="{img}/diagram_management.webp" alt="Organization chart" />
-    <figcaption>Fig.1 - Organization Chart</figcaption>
+    <figcaption>Fig.1 - Organization Chart.</figcaption>
   </figure>
   <hr />
   <h3 id="VehicleDesign">{$lang.vechicledesignHeader}</h3>
@@ -27,19 +27,19 @@
   <p>{@html $lang.mechanicaldesignprocessContent}</p>
   <figure>
     <img src="{img}/1.webp" alt="1" />
-    <figcaption>Fig.3 - Front view</figcaption>
+    <figcaption>Fig.3 - Front view.</figcaption>
   </figure>
   <figure>
     <img src="{img}/3.webp" alt="3" />
-    <figcaption>Fig.4 - Top view</figcaption>
+    <figcaption>Fig.4 - Top view.</figcaption>
   </figure>
   <figure>
     <img src="{img}/4.webp" alt="4" />
-    <figcaption>Fig.5 - Side view</figcaption>
+    <figcaption>Fig.5 - Side view.</figcaption>
   </figure>
   <figure>
     <img src="{img}/2.webp" alt="2" />
-    <figcaption>Fig.6 - BlueNemo renders</figcaption>
+    <figcaption>Fig.6 - BlueNemo renders.</figcaption>
   </figure>
   <hr />
   <h5 id="Materials">{$lang.materialsHeader}</h5>
@@ -68,19 +68,19 @@
   <figure>
     <img src="rsc/5.webp" alt="outer skeleton" />
     <figcaption>
-      Fig.9 - The outer skeleton, i.e. the frame of the pressure chamber
+      Fig.9 - The outer skeleton, i.e. the frame of the pressure chamber.
     </figcaption>
   </figure>
   <p>{@html $lang.materialsContent4}</p>
   <figure>
     <img src="{img}/gripper_crossection.webp" alt="gripper crossection" />
-    <figcaption>Fig.10 - Mechanical gripper render</figcaption>
+    <figcaption>Fig.10 - Mechanical gripper render.</figcaption>
   </figure>
 
   <!-- inne zdjęcie niż w docxie-->
   <figure>
     <img src="{img}/gripper_with_ball.webp" alt="example gripper" />
-    <figcaption>Fig.11 - Example use of the gripper</figcaption>
+    <figcaption>Fig.11 - Example use of the gripper.</figcaption>
   </figure>
 
   <p>{@html $lang.materialsContent5}</p>
@@ -119,7 +119,7 @@
       src="{img}/diagram_power_communication.webp"
       alt="electronics diagram"
     />
-    <figcaption>Fig.13 - Electronics block diagram</figcaption>
+    <figcaption>Fig.13 - Electronics block diagram.</figcaption>
   </figure>
   <hr />
   <h6 id="PowerSupply">{$lang.powersupplyHeader}</h6>
@@ -134,7 +134,7 @@
   <figure>
     <img src="{img}/board_thrusters.webp" alt="powering motors pcb" />
     <figcaption>
-      Fig.14 - Proprietary PCB responsible for powering motors (bottom view)
+      Fig.14 - Proprietary PCB responsible for powering motors (bottom view).
     </figcaption>
   </figure>
 
@@ -144,13 +144,13 @@
   <p>{@html $lang.logiccontrolContent1}</p>
   <figure>
     <img src="{img}/board_controller.webp" alt="board controllers" />
-    <figcaption>Fig.15 - “ROV Controller” for STM32F767ZI</figcaption>
+    <figcaption>Fig.15 - “ROV Controller” for STM32F767ZI.</figcaption>
   </figure>
 
   <p>{@html $lang.logiccontrolContent2}</p>
   <figure>
     <img src="{img}/board_xavier.webp" alt="xavier" />
-    <figcaption>Fig.16 - NVIDIA Jetson AGX Xavier render</figcaption>
+    <figcaption>Fig.16 - NVIDIA Jetson AGX Xavier render.</figcaption>
   </figure>
   <hr />
   <h6 id="Sensors">{$lang.sensorsHeader}</h6>
@@ -161,7 +161,7 @@
       alt="wayfinder dvl"
       style="height:25%;width:25%;"
     />
-    <figcaption>Fig.17 - Teledyne Marine "Wayfinder DVL"</figcaption>
+    <figcaption>Fig.17 - Teledyne Marine "Wayfinder DVL".</figcaption>
   </figure>
 
   <p>{@html $lang.sensorsContent2}</p>
@@ -172,7 +172,7 @@
       style="height:35%;width:35%;"
     />
     <figcaption>
-      Fig.18 - Circuit board render of hydrophones modules
+      Fig.18 - Circuit board render of hydrophones modules.
     </figcaption>
   </figure>
 
@@ -185,7 +185,7 @@
   <p>{@html $lang.visionsystemContent}</p>
   <figure>
     <img src="{img}/module_led.webp" alt="led" style="height:25%;width:25%;" />
-    <figcaption>Fig.19 - Lumen Light R2 module</figcaption>
+    <figcaption>Fig.19 - Lumen Light R2 module.</figcaption>
   </figure>
   <hr />
   <h5 id="AlgorithmDesign">{$lang.algorithmdesignHeader}</h5>
@@ -195,7 +195,7 @@
     <img src="{img}/camera_probably_edge_detection.webp" alt="edge detecion" />
     <figcaption>
       Fig.20 - Computer vision examples: gate detection using YOLO and path axis
-      detection using OpenCV
+      detection using OpenCV.
     </figcaption>
   </figure>
   <hr />
@@ -206,7 +206,7 @@
 
     <figcaption>
       Fig.21 - On the left example task code, on the right debug view from the
-      virtual machine running it
+      virtual machine running it.
     </figcaption>
   </figure>
   <hr />
@@ -216,7 +216,7 @@
     <img src="{img}/diagram_modules.webp" alt="diagram modules" />
     <figcaption>
       Fig.22 - Structure of processing units, programs that they run and
-      connected devices
+      connected devices.
     </figcaption>
   </figure>
 
@@ -224,7 +224,7 @@
   <figure>
     <img src="{img}/camera_simulator_debug.webp" alt="camera debug view" />
     <figcaption>
-      Fig.23 - Debug view of the simulation showing exchanged data
+      Fig.23 - Debug view of the simulation showing exchanged data.
     </figcaption>
   </figure>
 
@@ -232,14 +232,14 @@
   <figure>
     <img src="{img}/camera_simulator_views.webp" alt="camera views" />
     <figcaption>
-      Fig.24 - Samples from the dataset generated by the simulator program
+      Fig.24 - Samples from the dataset generated by the simulator program.
     </figcaption>
   </figure>
 
   <p>{@html $lang.externalinterfacesContent4}</p>
   <figure>
     <img src="{img}/diagram_software_layers.webp" alt="diagram soft" />
-    <figcaption>Fig.25 - Structure of the controller web app</figcaption>
+    <figcaption>Fig.25 - Structure of the controller web app.</figcaption>
   </figure>
 
   <p>{@html $lang.externalinterfacesContent5}</p>
@@ -248,7 +248,7 @@
   <p>{@html $lang.securityContent1}</p>
   <figure>
     <img src="{img}/battery_parameters.webp" alt="battery parameters" />
-    <figcaption>Fig.26 - GRALMarine battery specification table</figcaption>
+    <figcaption>Fig.26 - GRALMarine battery specification table.</figcaption>
   </figure>
 
   <p>{@html $lang.securityContent2}</p>
