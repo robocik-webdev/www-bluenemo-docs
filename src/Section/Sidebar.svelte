@@ -10,6 +10,7 @@
     $opened = !$opened;
   }
 </script>
+
 <div class="sidebar" class:opened={$opened} on:click={showSidebar}>
   <div class="sidebar-test">
     <li role="button" use:scrollto={'#ReportSummary'}>
@@ -124,7 +125,7 @@
 <style>
   @media (min-width: 1025px) {
     .sidebar {
-      margin-top: 32px;
+      margin-top: 55px;
       padding: 0;
       width: 25%;
       background-color: var(--background-color);
@@ -168,7 +169,7 @@
 
   @media (max-width: 1024px) {
     .sidebar {
-      margin-top: 32px;
+      margin-top: 55px;
       padding: 0;
       width: 100%;
       background-color: var(--background-color);
