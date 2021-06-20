@@ -328,13 +328,15 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 80%;
+      width: 50%;
     }
 
     div.content {
       margin-left: 5%;
       margin-right: 5%;
       padding: 0.5% 1.5%;
+      text-align: justify;
+      text-justify: inter-word;
     }
     h4 {
       margin-left: 2%;
