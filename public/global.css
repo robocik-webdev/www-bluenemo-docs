@@ -14,23 +14,3 @@ body {
   box-sizing: border-box;
   font-family: raleway;
 }
-
-/* width */
-::-webkit-scrollbar {
-  width: 0.25em;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--text-color);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}

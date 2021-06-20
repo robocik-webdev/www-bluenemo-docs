@@ -2,18 +2,27 @@
   import { hidden } from '../header.js';
   import { opened } from '../sidebar.js';
 
+  let state = true;
+  let pic = 'rsc/Logo/menu.svg';
   $: if ($hidden) $opened = false;
 
   function showSidebar() {
     $opened = !$opened;
+    state = !state;
+
+    if (state) {
+      pic = 'rsc/Logo/menu.svg';
+    } else {
+      pic = 'rsc/Logo/close.svg';
+    }
   }
 </script>
 
 <div class="navbar">
   <img
-    class="logo"
+    class="navbar--logo"
     class:opened={$opened}
-    src="rsc/Logo/logo.svg"
+    src={pic}
     alt="( ͡° ͜ʖ ͡°)"
     on:click={showSidebar}
   />
@@ -21,10 +30,9 @@
 
 <style>
   @media (min-width: 1025px) {
-    .logo {
-      width: 45px;
-      height: 100%;
-      margin-left: 5px;
+    .navbar--logo,
+    .navbar--close {
+      display: none;
     }
 
     div.navbar {
@@ -38,16 +46,18 @@
   }
 
   @media (max-width: 1024px) {
-    .logo {
+    .navbar--logo {
       width: 45px;
       height: 100%;
       margin-left: 5px;
-      transition-duration: 500ms;
-      transform: rotate(-0.25turn);
+      cursor: pointer;
     }
 
-    .logo.opened {
-      transform: rotate(0);
+    .navbar--logo.opened {
+      width: 45px;
+      height: 100%;
+      margin-left: 5px;
+      cursor: pointer;
     }
 
     div.navbar {
@@ -55,7 +65,8 @@
       width: 100%;
       height: 55px;
       position: fixed;
-      text-align: left;
+      text-align: right;
+      display: block;
     }
   }
 </style>

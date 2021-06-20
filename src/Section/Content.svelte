@@ -307,7 +307,7 @@
     p,
     li,
     figure {
-      font-size: 0.75em;
+      font-size: 1em;
     }
 
     p,
