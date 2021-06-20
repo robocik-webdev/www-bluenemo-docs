@@ -17,8 +17,8 @@
   <h3 id="VehicleDesign">{$lang.vechicledesignHeader}</h3>
   <h4 id="SystemDesign">{$lang.systemdesignHeader}</h4>
   <figure>
-    <img src="rsc/3.webp" alt="3" />
-    <figcaption>Fig.2 - hopefully its only a tmp img</figcaption>
+    <img src="{img}/3.webp" alt="3" />
+    <figcaption>Fig.2 - </figcaption>
   </figure>
   <!-- to który render w końcu ???? -->
   <hr />
@@ -26,19 +26,19 @@
   <h5 id="MechanicalDesignProcess">{$lang.mechanicaldesignprocessHeader}</h5>
   <p>{@html $lang.mechanicaldesignprocessContent}</p>
   <figure>
-    <img src="rsc/1.webp" alt="1" />
+    <img src="{img}/1.webp" alt="1" />
     <figcaption>Fig.3 - Front view</figcaption>
   </figure>
   <figure>
-    <img src="rsc/3.webp" alt="3" />
+    <img src="{img}/3.webp" alt="3" />
     <figcaption>Fig.4 - Top view</figcaption>
   </figure>
   <figure>
-    <img src="rsc/4.webp" alt="4" />
+    <img src="{img}/4.webp" alt="4" />
     <figcaption>Fig.5 - Side view</figcaption>
   </figure>
   <figure>
-    <img src="rsc/2.webp" alt="2" />
+    <img src="{img}/2.webp" alt="2" />
     <figcaption>Fig.6 - BlueNemo renders</figcaption>
   </figure>
   <hr />
@@ -74,7 +74,7 @@
   <p>{@html $lang.materialsContent4}</p>
   <figure>
     <img src="{img}/gripper_crossection.webp" alt="gripper crossection" />
-    <figcaption>Fig.10 - Mechanical gripper render/ tmp pic?</figcaption>
+    <figcaption>Fig.10 - Mechanical gripper render</figcaption>
   </figure>
 
   <!-- inne zdjęcie niż w docxie-->
