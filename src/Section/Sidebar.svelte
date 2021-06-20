@@ -10,9 +10,6 @@
     $opened = !$opened;
   }
 </script>
-
-<img class="lenny" src="rsc/Logo/logo.png" alt="( ͡° ͜ʖ ͡°)" on:click={showSidebar} />
-
 <div class="sidebar" class:opened={$opened} on:click={showSidebar}>
   <div class="sidebar-test">
     <li role="button" use:scrollto={'#ReportSummary'}>
