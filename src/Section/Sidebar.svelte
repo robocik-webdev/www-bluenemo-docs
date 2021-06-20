@@ -11,7 +11,7 @@
   }
 </script>
 
-<img class="lenny" src="rsc/tmp.png" alt="( ͡° ͜ʖ ͡°)" on:click={showSidebar} />
+<img class="lenny" src="rsc/Logo/logo.png" alt="( ͡° ͜ʖ ͡°)" on:click={showSidebar} />
 
 <div class="sidebar" class:opened={$opened} on:click={showSidebar}>
   <div class="sidebar-test">
@@ -145,8 +145,8 @@
     }
 
     .sidebar li:hover {
-      background-color: #17274d;
-      color: #ffffff;
+      background-color: var(--text-color);
+      color: var(--background-color);
     }
 
     .sidebar-test {
@@ -167,14 +167,11 @@
       font-size: 0.7em;
       margin-left: 9%;
     }
-
-    .lenny {
-      display: none;
-    }
   }
 
   @media (max-width: 1024px) {
     .sidebar {
+      margin-top: 32px;
       padding: 0;
       width: 100%;
       background-color: var(--background-color);
@@ -184,7 +181,7 @@
       transform: translateX(-100%);
       height: 100%;
     }
-    .opened {
+    .sidebar.opened {
       transform: translateX(0);
     }
 
@@ -216,12 +213,6 @@
     .sidebar__smallThree {
       font-size: 0.7em;
       margin-left: 9%;
-    }
-
-    .lenny {
-      position: fixed;
-      height: 5%;
-      width: 15%;
     }
   }
 </style>
