@@ -170,7 +170,7 @@
 
   @media (max-width: 1024px) {
     .sidebar {
-      display: block;
+      display: flex;
       margin-top: 32px;
       padding: 0;
       width: 100%;
