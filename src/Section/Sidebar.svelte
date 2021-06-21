@@ -148,29 +148,25 @@
       color: var(--background-color);
     }
 
-    .sidebar-test {
-      padding-left: 20px;
-    }
-
     .sidebar__smallOne {
       font-size: 0.9em;
-      margin-left: 3%;
+      padding-left: 3% !important;
     }
 
     .sidebar__smallTwo {
       font-size: 0.8em;
-      margin-left: 6%;
+      padding-left: 6% !important;
     }
 
     .sidebar__smallThree {
       font-size: 0.7em;
-      margin-left: 9%;
+      padding-left: 9% !important;
     }
   }
 
   @media (max-width: 1024px) {
     .sidebar {
-      display: flex;
+      display: block;
       margin-top: 32px;
       padding: 0;
       width: 100%;
