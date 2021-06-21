@@ -123,7 +123,7 @@
 </div>
 
 <style>
-  @media (min-width: 1025px) {
+  @media (min-width: 801px) {
     .sidebar {
       margin-top: 32px;
       padding: 0;
@@ -164,7 +164,7 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 800px) {
     .sidebar {
       display: block;
       margin-top: 32px;

@@ -255,7 +255,7 @@
 </div>
 
 <style>
-  @media (min-width: 1025px) {
+  @media (min-width: 801px) {
     p,
     li,
     figure {
@@ -303,7 +303,7 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 800px) {
     p,
     li,
     figure {
