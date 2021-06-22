@@ -255,99 +255,56 @@
 </div>
 
 <style>
-  @media (min-width: 801px) {
-    p,
-    li,
-    figure {
-      font-size: 0.8em;
-    }
+  p,
+  li,
+  figure {
+    font-size: 1em;
+  }
 
-    p,
-    li {
-      margin-left: 5%;
-    }
+  p,
+  li {
+    margin-left: 5%;
+  }
 
-    figure {
-      margin: 7% 0 7% 0;
-    }
+  figure {
+    margin: 7% 0 7% 0;
+  }
 
-    figcaption {
-      margin-top: 1.5%;
-      text-align: center;
-    }
+  figcaption {
+    margin-top: 1.5%;
+    text-align: center;
+  }
 
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
-    div.content {
-      margin-left: 25%;
-      margin-right: 25%;
-      padding: 0.5% 1.5%;
-      text-align: justify;
-      text-justify: inter-word;
-    }
-    h4 {
-      margin-left: 2%;
-    }
+  div.content {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 0.5% 1.5%;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  h4 {
+    margin-left: 2%;
+  }
 
-    h5 {
-      margin-left: 3%;
-    }
+  h5 {
+    margin-left: 3%;
+  }
 
-    h6 {
-      margin-left: 4%;
-    }
+  h6 {
+    margin-left: 4%;
   }
 
   @media (max-width: 800px) {
-    p,
-    li,
-    figure {
-      font-size: 1em;
-    }
-
-    p,
-    li {
-      margin-left: 5%;
-    }
-
-    figure {
-      margin: 7% 0 7% 0;
-    }
-
-    figcaption {
-      margin-top: 1.5%;
-      text-align: center;
-    }
-
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
-
     div.content {
       margin-left: 5%;
       margin-right: 5%;
-      padding: 0.5% 1.5%;
-      text-align: justify;
-      text-justify: inter-word;
-    }
-    h4 {
-      margin-left: 2%;
-    }
-
-    h5 {
-      margin-left: 3%;
-    }
-
-    h6 {
-      margin-left: 4%;
     }
   }
 </style>

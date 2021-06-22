@@ -41,86 +41,54 @@
 </div>
 
 <style>
-  @media (min-width: 1025px) {
-    div.navbar {
-      background-color: var(--text-color);
-      width: 100%;
-      height: 55px;
-      position: fixed;
-      display: block;
-    }
-
-    .navbar__logo {
-      text-align: left;
-      height: 100%;
-      width: 100%;
-    }
-
-    .navbar__logo--link {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      height: 100%;
-      text-decoration: none;
-    }
-
-    .navbar__logo--link--img1 {
-      display: inline-block;
-      height: 100%;
-      width: 35px;
-      margin-left: 12px;
-    }
-
-    .navbar__logo--link--txt {
-      margin-left: 12px;
-      font-size: 1.2em;
-      font-weight: 400;
-      color: #fff;
-    }
-
-    .navbar__menu {
-      display: none;
-    }
+  div.navbar {
+    background-color: var(--text-color);
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    display: block;
   }
 
-  @media (max-width: 1024px) {
+  .navbar__logo {
+    text-align: left;
+    height: 100%;
+    width: 100%;
+  }
+
+  .navbar__logo--link {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    width: 250px;
+  }
+
+  .navbar__logo--link--img1 {
+    display: inline-block;
+    height: 100%;
+    width: 35px;
+    margin-left: 12px;
+  }
+
+  .navbar__logo--link--txt {
+    margin-left: 12px;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  @media (max-width: 800px) {
     div.navbar {
-      background-color: var(--text-color);
-      width: 100%;
-      height: 55px;
-      position: fixed;
       text-align: right;
       display: flex;
     }
-
-    .navbar__logo {
-      height: 100%;
-      width: 100%;
-    }
-
-    .navbar__logo--link {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      height: 100%;
-      text-decoration: none;
-    }
-
-    .navbar__logo--link--img1 {
-      display: inline-block;
-      height: 100%;
-      width: 35px;
-      margin-left: 12px;
-    }
-
-    .navbar__logo--link--txt {
-      margin-left: 12px;
-      font-size: 1.2em;
-      font-weight: 400;
-      color: #fff;
-    }
-
     .navbar__menu {
+      display: flex;
       text-align: right;
       height: 100%;
     }

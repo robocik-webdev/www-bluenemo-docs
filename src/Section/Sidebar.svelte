@@ -123,56 +123,48 @@
 </div>
 
 <style>
-  @media (min-width: 801px) {
-    .sidebar {
-      margin-top: 32px;
-      padding: 0;
-      width: 25%;
-      background-color: var(--background-color);
-      position: fixed;
-      height: auto;
-      overflow: auto;
-      display: block;
-    }
+  .sidebar {
+    margin-top: 32px;
+    padding: 0;
+    width: 25%;
+    background-color: var(--background-color);
+    position: fixed;
+    height: auto;
+    overflow: auto;
+    display: block;
+  }
 
-    .sidebar li {
-      display: block;
-      color: var(--text-color);
-      padding: 2%;
-      text-decoration: none;
-      cursor: pointer;
-    }
+  .sidebar li {
+    display: block;
+    color: var(--text-color);
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-    .sidebar li:hover {
-      background-color: var(--text-color);
-      color: var(--background-color);
-    }
+  .sidebar li:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+  }
 
-    .sidebar__smallOne {
-      font-size: 0.9em;
-      padding-left: 3% !important;
-    }
+  .sidebar__smallOne {
+    font-size: 0.9em;
+    padding-left: 3% !important;
+  }
 
-    .sidebar__smallTwo {
-      font-size: 0.8em;
-      padding-left: 6% !important;
-    }
+  .sidebar__smallTwo {
+    font-size: 0.8em;
+    padding-left: 6% !important;
+  }
 
-    .sidebar__smallThree {
-      font-size: 0.7em;
-      padding-left: 9% !important;
-    }
+  .sidebar__smallThree {
+    font-size: 0.7em;
+    padding-left: 9% !important;
   }
 
   @media (max-width: 800px) {
     .sidebar {
-      display: block;
-      margin-top: 32px;
-      padding: 0;
       width: 100%;
-      background-color: var(--background-color);
-      position: fixed;
-      overflow: auto;
       transition-duration: 500ms;
       transform: translateX(100%);
       height: 100%;
@@ -182,33 +174,7 @@
     }
 
     .sidebar li {
-      display: block;
-      color: var(--text-color);
-      padding: 1%;
-      text-decoration: none;
-      cursor: pointer;
-      margin-right: 25%;
       overflow: auto;
-    }
-
-    .sidebar li:hover {
-      background-color: var(--text-color);
-      color: #ffffff;
-    }
-
-    .sidebar__smallOne {
-      font-size: 0.9em;
-      margin-left: 3%;
-    }
-
-    .sidebar__smallTwo {
-      font-size: 0.8em;
-      margin-left: 6%;
-    }
-
-    .sidebar__smallThree {
-      font-size: 0.7em;
-      margin-left: 9%;
     }
   }
 </style>
