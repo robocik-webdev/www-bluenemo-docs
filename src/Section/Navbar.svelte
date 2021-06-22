@@ -2,15 +2,13 @@
   import { hidden } from '../header.js';
   import { opened } from '../sidebar.js';
 
-  let state = true;
   let pic = 'rsc/Logo/menu.svg';
   $: if ($hidden) $opened = false;
 
   function showSidebar() {
     $opened = !$opened;
-    state = !state;
 
-    if (state) {
+    if (!$opened) {
       pic = 'rsc/Logo/menu.svg';
     } else {
       pic = 'rsc/Logo/close.svg';
