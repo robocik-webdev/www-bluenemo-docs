@@ -40,6 +40,7 @@
 
 <style>
   div.navbar {
+    z-index: 2;
     background-color: var(--text-color);
     width: 100%;
     height: 55px;

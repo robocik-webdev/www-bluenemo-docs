@@ -5,11 +5,14 @@
 </script>
 
 <Navbar />
-<br />
-<Sidebar />
-<Content />
+<div class="main">
+  <Sidebar />
+  <Content />
+</div>
 
 <style>
-
-  
+  .main {
+    width: 800px;
+    margin: auto;
+  }
 </style>
