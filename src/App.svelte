@@ -17,7 +17,6 @@
     width: 1000px;
     height: 100%;
     margin: auto;
-    overflow: hidden;
   }
 
   @media (max-width: 1000px) {
