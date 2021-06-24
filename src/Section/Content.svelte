@@ -141,7 +141,7 @@
 
     <p>{@html $lang.powersupplyContent3}</p>
     <hr />
-    <h6 id="LogicControll">{$lang.logiccontrolHeader}</h6>
+    <h6 id="LogicControl">{$lang.logiccontrolHeader}</h6>
     <p>{@html $lang.logiccontrolContent1}</p>
     <figure>
       <img src="{img}/board_controller.webp" alt="board controllers" />
@@ -292,9 +292,9 @@
   }
 
   div.content {
-    margin-left: 200px;
+    margin-left: 300px;
     height: 100%;
-    width: 600px;
+    width: 700px;
     padding: 0.5% 1.5%;
     text-align: justify;
     text-justify: inter-word;

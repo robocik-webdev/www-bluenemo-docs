@@ -9,6 +9,7 @@
   function showSidebar() {
     $opened = !$opened;
   }
+
 </script>
 
 <div class="sidebar" class:opened={$opened} on:click={showSidebar}>
@@ -126,7 +127,7 @@
   .sidebar {
     z-index: 1;
     overflow-x: hidden;
-    width: 180px;
+    width: 280px;
     height: 100%;
     background-color: var(--background-color);
     position: fixed;
@@ -139,7 +140,7 @@
   }
 
   .sidebar li {
-    padding:5px 0 5px 0;
+    padding:10px;
     display: block;
     color: var(--text-color);
     text-decoration: none;

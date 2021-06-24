@@ -6,6 +6,7 @@
 
 <Navbar />
 <br/>
+
 <div class="main">
   <Sidebar />
   <Content />
@@ -13,7 +14,7 @@
 
 <style>
   .main {
-    width: 800px;
+    width: 1000px;
     margin: auto;
   }
 </style>
