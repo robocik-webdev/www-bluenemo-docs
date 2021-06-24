@@ -17,4 +17,10 @@
     width: 1000px;
     margin: auto;
   }
+
+  @media (max-width: 1000px) {
+    .main{
+      width:100%;
+    }
+  }
 </style>

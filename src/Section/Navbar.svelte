@@ -40,6 +40,7 @@
 
 <style>
   div.navbar {
+    top:0;
     z-index: 2;
     background-color: var(--text-color);
     width: 100%;
@@ -81,7 +82,7 @@
     display: none;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     div.navbar {
       text-align: right;
       display: flex;

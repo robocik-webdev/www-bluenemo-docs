@@ -312,10 +312,11 @@
     margin-left: 4%;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     div.content {
       margin-left: 5%;
       margin-right: 5%;
+      width:auto;
     }
   }
 </style>

@@ -167,7 +167,7 @@
     padding-left: 9% !important;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
     .sidebar {
       width: 100%;
       transition-duration: 500ms;
