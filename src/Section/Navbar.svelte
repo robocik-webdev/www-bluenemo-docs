@@ -17,36 +17,47 @@
 </script>
 
 <div class="navbar">
-  <div class="navbar__logo">
-    <a class="navbar__logo--link" href="http://robocik.pwr.edu.pl/">
+  <div class="navbar-static">
+    <div class="navbar__logo">
+      <a class="navbar__logo--link" href="http://robocik.pwr.edu.pl/">
+        <img
+          class="navbar__logo--link--img1"
+          src="rsc/Logo/logo.svg"
+          alt="logo"
+        />
+        <h1 class="navbar__logo--link--txt">PWr Diving Crew</h1>
+      </a>
+    </div>
+    <div class="navbar__menu">
       <img
-        class="navbar__logo--link--img1"
-        src="rsc/Logo/logo.svg"
-        alt="logo"
+        class="navbar__menu--link--img2"
+        class:opened={$opened}
+        src={pic}
+        alt="( ͡° ͜ʖ ͡°)"
+        on:click={showSidebar}
       />
-      <h1 class="navbar__logo--link--txt">PWr Diving Crew</h1>
-    </a>
-  </div>
-  <div class="navbar__menu">
-    <img
-      class="navbar__menu--link--img2"
-      class:opened={$opened}
-      src={pic}
-      alt="( ͡° ͜ʖ ͡°)"
-      on:click={showSidebar}
-    />
+    </div>
   </div>
 </div>
 
 <style>
   div.navbar {
-    top:0;
     z-index: 2;
+    top: 0;
     background-color: var(--text-color);
     width: 100%;
     height: 55px;
-    position: fixed;
+    position: static;
     display: block;
+  }
+
+  div.navbar-static {
+    z-index: 3;
+    top: inherit;
+    background-color: inherit;
+    width: inherit;
+    height: inherit;
+    position: fixed;
   }
 
   .navbar__logo {
@@ -69,6 +80,7 @@
     height: 100%;
     width: 35px;
     margin-left: 12px;
+    cursor: pointer;
   }
 
   .navbar__logo--link--txt {
@@ -83,7 +95,7 @@
   }
 
   @media (max-width: 1000px) {
-    div.navbar {
+    div.navbar-static {
       text-align: right;
       display: flex;
     }
@@ -97,6 +109,7 @@
       height: 100%;
       width: 35px;
       margin-right: 12px;
+      cursor: pointer;
     }
   }
 </style>

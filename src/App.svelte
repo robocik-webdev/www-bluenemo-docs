@@ -5,17 +5,19 @@
 </script>
 
 <Navbar />
-<br /><br />
-
 <div class="main">
   <Sidebar />
   <Content />
 </div>
 
+
+<p style="color:black; position:sticky; width:100%; margin:auto;">Lotem ipsum</p>
 <style>
   .main {
     width: 1000px;
+    height: 100%;
     margin: auto;
+    overflow: hidden;
   }
 
   @media (max-width: 1000px) {

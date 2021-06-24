@@ -217,22 +217,19 @@
 
 <style>
   .sidebar {
-    z-index: 1;
-    overflow-x: hidden;
     width: 280px;
     height: 100%;
     background-color: var(--background-color);
     position: fixed;
-    overflow: auto;
-  }
-
-  .sidebar-test {
-    padding: 20px 0px 20px 0px;
+    flex:left;
+    overflow-y: auto;
   }
 
   .sidebar li {
-    padding: 10px;
     display: block;
+    padding: 4px;
+    margin: auto;
+    display: flex;
     color: var(--text-color);
     text-decoration: none;
     cursor: pointer;
