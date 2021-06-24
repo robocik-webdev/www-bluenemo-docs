@@ -124,14 +124,17 @@
 
 <style>
   .sidebar {
-    margin-top: 32px;
+    z-index: 1;
     padding: 0;
     width: 25%;
     background-color: var(--background-color);
     position: fixed;
-    height: auto;
+    height: 100%;
     overflow: auto;
     display: block;
+  }
+  .sidebar-test {
+    margin-top: 55px;
   }
 
   .sidebar li {

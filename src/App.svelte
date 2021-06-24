@@ -5,11 +5,8 @@
 </script>
 
 <Navbar />
-<br />
 <Sidebar />
 <Content />
 
 <style>
-
-  
 </style>
