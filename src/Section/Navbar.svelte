@@ -96,7 +96,7 @@
       display: inline-block;
       height: 100%;
       width: 35px;
-      margin-left: 25px;
+      margin-right: 12px;
     }
   }
 </style>

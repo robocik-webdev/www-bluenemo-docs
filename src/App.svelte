@@ -5,7 +5,7 @@
 </script>
 
 <Navbar />
-<br/>
+<br /><br />
 
 <div class="main">
   <Sidebar />
@@ -19,8 +19,8 @@
   }
 
   @media (max-width: 1000px) {
-    .main{
-      width:100%;
+    .main {
+      width: 100%;
     }
   }
 </style>
