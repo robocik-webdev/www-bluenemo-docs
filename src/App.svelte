@@ -10,8 +10,6 @@
   <Content />
 </div>
 
-
-<p style="color:black; position:sticky; width:100%; margin:auto;">Lotem ipsum</p>
 <style>
   .main {
     width: 1000px;

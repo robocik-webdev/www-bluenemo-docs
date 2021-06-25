@@ -300,8 +300,8 @@
     text-justify: inter-word;
   }
 
-  #ReportSummary{
-    margin-top:0;
+  #ReportSummary {
+    margin-top: 0;
   }
   h4 {
     margin-left: 2%;
@@ -319,7 +319,7 @@
     div.content {
       margin-left: 5%;
       margin-right: 5%;
-      width:auto;
+      width: auto;
     }
   }
 </style>
