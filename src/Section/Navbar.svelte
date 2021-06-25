@@ -1,17 +1,16 @@
 <script>
   import { hidden } from '../header.js';
-  import { opened } from '../sidebar.js';
+  import { opened, picState } from '../sidebar.js';
 
-  let pic = 'rsc/Logo/menu.svg';
   $: if ($hidden) $opened = false;
 
   function showSidebar() {
     $opened = !$opened;
 
     if (!$opened) {
-      pic = 'rsc/Logo/menu.svg';
+      $picState = 'rsc/Logo/menu.svg';
     } else {
-      pic = 'rsc/Logo/close.svg';
+      $picState = 'rsc/Logo/close.svg';
     }
   }
 </script>
@@ -32,7 +31,7 @@
       <img
         class="navbar__menu--link--img2"
         class:opened={$opened}
-        src={pic}
+        src={$picState}
         alt="( ͡° ͜ʖ ͡°)"
         on:click={showSidebar}
       />

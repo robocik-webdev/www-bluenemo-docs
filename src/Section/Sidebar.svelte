@@ -2,12 +2,18 @@
   import { scrollto } from '../utils.js';
   import { lang } from '../content.js';
   import { hidden } from '../header.js';
-  import { opened } from '../sidebar.js';
+  import { opened, picState } from '../sidebar.js';
 
   $: if ($hidden) $opened = false;
 
   function showSidebar() {
     $opened = !$opened;
+
+    if (!$opened) {
+      $picState = 'rsc/Logo/menu.svg';
+    } else {
+      $picState = 'rsc/Logo/close.svg';
+    }
   }
 
   let sidebar = [
@@ -218,16 +224,20 @@
 <style>
   .sidebar {
     width: 280px;
-    height: 100%;
+    height: calc(100%-55px);
     background-color: var(--background-color);
     position: fixed;
-    flex:left;
+    flex: left;
     overflow-y: auto;
   }
 
+  .sidebar-test {
+    padding: 50px 0;
+  }
+
   .sidebar li {
+    padding: 2px;
     display: block;
-    padding: 4px;
     margin: auto;
     display: flex;
     color: var(--text-color);
@@ -258,6 +268,10 @@
       transition-duration: 500ms;
       transform: translateX(100%);
       height: 100%;
+    }
+
+    .sidebar-test {
+      padding: 0;
     }
     .sidebar.opened {
       transform: translateX(0);
