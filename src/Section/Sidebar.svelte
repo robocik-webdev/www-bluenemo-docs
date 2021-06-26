@@ -228,15 +228,15 @@
     background-color: var(--background-color);
     position: fixed;
     flex: left;
-    overflow-y: auto;
+
   }
 
   .sidebar-test {
-    padding: 50px 0;
+    overflow-y: auto;
+    padding-top: 2px;
   }
 
   .sidebar li {
-    padding: 2px;
     display: block;
     margin: auto;
     display: flex;
@@ -270,15 +270,13 @@
       height: 100%;
     }
 
-    .sidebar-test {
-      padding: 0;
-    }
     .sidebar.opened {
       transform: translateX(0);
     }
 
-    .sidebar li {
-      overflow: auto;
+    .sidebar-test{
+      padding: 0;
     }
+
   }
 </style>
