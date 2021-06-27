@@ -118,6 +118,7 @@
       <img
         src="{img}/diagram_power_communication.webp"
         alt="electronics diagram"
+        style="height:80%;width:80%;"
       />
       <figcaption>Fig.13 - Electronics block diagram.</figcaption>
     </figure>
