@@ -37,6 +37,7 @@
     'SoftwareDesign',
     'ExternalInterfaces',
     'Security',
+    'Experience'
   ];
 </script>
 
@@ -218,6 +219,15 @@
     >
       {$lang.securityHeader}
     </li>
+
+    <li
+      role="button"
+      on:click={() => {
+        scrollto('#' + sidebar[20]);
+      }}
+    >
+      {$lang.experienceHeader}
+    </li>
   </div>
 </div>
 
@@ -228,7 +238,6 @@
     background-color: var(--background-color);
     position: fixed;
     flex: left;
-
   }
 
   .sidebar-test {
@@ -274,9 +283,8 @@
       transform: translateX(0);
     }
 
-    .sidebar-test{
+    .sidebar-test {
       padding: 0;
     }
-
   }
 </style>

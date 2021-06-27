@@ -18,10 +18,9 @@
     <h3 id="VehicleDesign">{$lang.vechicledesignHeader}</h3>
     <h4 id="SystemDesign">{$lang.systemdesignHeader}</h4>
     <figure>
-      <img src="{img}/3.webp" alt="3" />
-      <figcaption>Fig.2 -</figcaption>
+      <img src="{img}/FrontDesign.webp" alt="front design" />
+      <figcaption>Fig.2 - Front design</figcaption>
     </figure>
-    <!-- to który render w końcu ???? -->
     <hr />
     <h4 id="MechanicalDesign">{$lang.mechanicaldesignHeader}</h4>
     <h5 id="MechanicalDesignProcess">{$lang.mechanicaldesignprocessHeader}</h5>
@@ -260,6 +259,30 @@
     </figure>
 
     <p>{@html $lang.securityContent2}</p>
+    <hr />
+
+    <h3 id="Experience">{$lang.experienceHeader}</h3>
+    <p>{@html $lang.experienceContent1}</p>
+    <figure>
+      <img src="{img}/first_gen.webp" alt="first generation" />
+      <figcaption>Fig.27 - First Generation.</figcaption>
+    </figure>
+    <p>{@html $lang.experienceContent2}</p>
+    <figure>
+      <img src="{img}/second_gen.webp" alt="second generation" />
+      <figcaption>Fig.28 - Second Generation.</figcaption>
+    </figure>
+    <p>{@html $lang.experienceContent3}</p>
+    <figure>
+      <img src="{img}/third_gen.webp" alt="third generation" />
+      <figcaption>Fig.29 - Third Generation.</figcaption>
+    </figure>
+    <p>{@html $lang.experienceContent4}</p>
+    <figure>
+      <img src="{img}/fourth_gen.webp" alt="fourth generation" />
+      <figcaption>Fig.30 - Fourth Generation.</figcaption>
+    </figure>
+    <p>{@html $lang.experienceContent5}</p>
   </div>
 </div>
 
