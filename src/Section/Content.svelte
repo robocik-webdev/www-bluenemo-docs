@@ -3,8 +3,8 @@
   let img = './rsc/images';
 </script>
 
-<div class="content">
-  <div class="content-test">
+<div class="wrapper">
+  <div class="content">
     <h3 id="ReportSummary">{$lang.reportsummaryHeader}</h3>
     <p>{@html $lang.reportsummaryContent}</p>
     <hr />
@@ -316,13 +316,17 @@
     width: 50%;
   }
 
-  div.content {
+  .wrapper {
     margin-left: 300px;
     height: 100%;
     width: 700px;
     padding: 0 1.5%;
     text-align: justify;
     text-justify: inter-word;
+  }
+
+  .content {
+    padding: 55px 0;
   }
 
   #ReportSummary {
@@ -341,10 +345,13 @@
   }
 
   @media (max-width: 1000px) {
-    div.content {
+    .wrapper {
       margin-left: 5%;
       margin-right: 5%;
       width: auto;
+    }
+    .content {
+      padding: 30px 0;
     }
   }
 </style>

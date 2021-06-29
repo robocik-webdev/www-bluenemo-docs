@@ -8,12 +8,7 @@
 
   function showSidebar() {
     $opened = !$opened;
-
-    if (!$opened) {
-      $picState = './rsc/Logo/menu.svg';
-    } else {
-      $picState = './rsc/Logo/close.svg';
-    }
+    $picState = !$opened ? './rsc/Logo/menu.svg' : './rsc/Logo/close.svg';
   }
 
   let sidebar = [
@@ -41,8 +36,8 @@
   ];
 </script>
 
-<div class="sidebar" class:opened={$opened} on:click={showSidebar}>
-  <div class="sidebar-test">
+<div class="wrapper" class:opened={$opened} on:click={showSidebar}>
+  <div class="sidebar">
     <li
       role="button"
       on:click={() => {
@@ -232,22 +227,25 @@
 </div>
 
 <style>
-  .sidebar {
-    width: 280px;
-    height: calc(100%-55px);
-    background-color: var(--background-color);
-    position: fixed;
+  .wrapper {
+    overflow-y: auto;
     flex: left;
+    position: fixed;
+    width: 280px;
+    height: calc(100% - 55px);
+    background-color: var(--background-color);
+    transition: transform 400ms;
   }
 
-  .sidebar-test {
+  .sidebar {
     overflow-y: auto;
-    padding-top: 2px;
+    padding: 55px 0;
   }
 
   .sidebar li {
     display: block;
     margin: auto;
+    padding: 3px 10px;
     display: flex;
     color: var(--text-color);
     text-decoration: none;
@@ -272,19 +270,17 @@
   }
 
   @media (max-width: 1000px) {
-    .sidebar {
+    .wrapper {
       width: 100%;
-      transition-duration: 500ms;
       transform: translateX(100%);
-      height: 100%;
     }
 
-    .sidebar.opened {
+    .wrapper.opened {
       transform: translateX(0);
     }
 
-    .sidebar-test {
-      padding: 0;
+    .sidebar {
+      padding: 10px 0;
     }
   }
 </style>

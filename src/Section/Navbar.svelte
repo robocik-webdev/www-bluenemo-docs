@@ -6,12 +6,7 @@
 
   function showSidebar() {
     $opened = !$opened;
-
-    if (!$opened) {
-      $picState = './rsc/Logo/menu.svg';
-    } else {
-      $picState = './rsc/Logo/close.svg';
-    }
+    $picState = !$opened ? './rsc/Logo/menu.svg' : './rsc/Logo/close.svg';
   }
 </script>
 
@@ -84,7 +79,7 @@
 
   .navbar__logo--link--txt {
     margin-left: 12px;
-    font-size: 1.2em;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #fff;
   }
@@ -99,15 +94,18 @@
       display: flex;
     }
     .navbar__menu {
+      box-sizing: border-box;
       display: flex;
-      text-align: right;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
       height: 100%;
+      width: 55px;
     }
     .navbar__menu--link--img2 {
       display: inline-block;
       height: 100%;
-      width: 35px;
-      margin-right: 12px;
+      width: 100%;
       cursor: pointer;
     }
   }
