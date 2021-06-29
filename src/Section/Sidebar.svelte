@@ -1,137 +1,245 @@
 <script>
-  import { scrollto } from 'svelte-scrollto';
+  import { scrollto } from '../utils.js';
   import { lang } from '../content.js';
   import { hidden } from '../header.js';
-  import { opened } from '../sidebar.js';
+  import { opened, picState } from '../sidebar.js';
 
   $: if ($hidden) $opened = false;
 
   function showSidebar() {
     $opened = !$opened;
+    $picState = !$opened ? './rsc/Logo/menu.svg' : './rsc/Logo/close.svg';
   }
+
+  let sidebar = [
+    'ReportSummary',
+    'OrganizationChart',
+    'VehicleDesign',
+    'SystemDesign',
+    'MechanicalDesign',
+    'MechanicalDesignProcess',
+    'Materials',
+    'ProductionMethods',
+    'PhysicalProperties',
+    'ElectronicDesign',
+    'ElectronicDesignProcess',
+    'PowerSupply',
+    'LogicControl',
+    'Sensors',
+    'Communication',
+    'VisionSystem',
+    'AlgorithmDesign',
+    'SoftwareDesign',
+    'ExternalInterfaces',
+    'Security',
+    'Experience',
+  ];
 </script>
 
-<div class="sidebar" class:opened={$opened} on:click={showSidebar}>
-  <div class="sidebar-test">
-    <li role="button" use:scrollto={'#ReportSummary'}>
+<div class="wrapper" class:opened={$opened} on:click={showSidebar}>
+  <div class="sidebar">
+    <li
+      role="button"
+      on:click={() => {
+        scrollto('#' + sidebar[0]);
+      }}
+    >
       {$lang.reportsummaryHeader}
     </li>
-    <li role="button" use:scrollto={'#OrganizationChart'}>
+    <li
+      role="button"
+      on:click={() => {
+        scrollto('#' + sidebar[1]);
+      }}
+    >
       {$lang.organizationchartHeader}
     </li>
-    <li role="button" use:scrollto={'#VehicleDesign'}>
+    <li
+      role="button"
+      on:click={() => {
+        scrollto('#' + sidebar[2]);
+      }}
+    >
       {$lang.vechicledesignHeader}
     </li>
-    <li role="button" class="sidebar__smallOne" use:scrollto={'#SystemDesign'}>
+    <li
+      role="button"
+      class="sidebar__smallOne"
+      on:click={() => {
+        scrollto('#' + sidebar[3]);
+      }}
+    >
       {$lang.systemdesignHeader}
     </li>
     <li
       role="button"
       class="sidebar__smallOne"
-      use:scrollto={'#MechanicalDesign'}
+      on:click={() => {
+        scrollto('#' + sidebar[4]);
+      }}
     >
       {$lang.mechanicaldesignHeader}
     </li>
     <li
       role="button"
       class="sidebar__smallTwo"
-      use:scrollto={'#MechanicalDesignProcess'}
+      on:click={() => {
+        scrollto('#' + sidebar[5]);
+      }}
     >
       {$lang.mechanicaldesignprocessHeader}
     </li>
-    <li role="button" class="sidebar__smallTwo" use:scrollto={'#Materials'}>
+    <li
+      role="button"
+      class="sidebar__smallTwo"
+      on:click={() => {
+        scrollto('#' + sidebar[6]);
+      }}
+    >
       {$lang.materialsHeader}
     </li>
     <li
       role="button"
       class="sidebar__smallTwo"
-      use:scrollto={'#ProductionMethods'}
+      on:click={() => {
+        scrollto('#' + sidebar[7]);
+      }}
     >
       {$lang.productionmethodsHeader}
     </li>
     <li
       role="button"
       class="sidebar__smallTwo"
-      use:scrollto={'#PhysicalProperties'}
+      on:click={() => {
+        scrollto('#' + sidebar[8]);
+      }}
     >
       {$lang.physicalpropertiesHeader}
     </li>
     <li
       role="button"
       class="sidebar__smallOne"
-      use:scrollto={'#ElectronicDesign'}
+      on:click={() => {
+        scrollto('#' + sidebar[9]);
+      }}
     >
       {$lang.electronicdesignHeader}
     </li>
     <li
       role="button"
       class="sidebar__smallTwo"
-      use:scrollto={'#ElectronicDesignProcess'}
+      on:click={() => {
+        scrollto('#' + sidebar[10]);
+      }}
     >
       {$lang.electronicdesignprocessHeader}
     </li>
-    <li role="button" class="sidebar__smallThree" use:scrollto={'#PowerSupply'}>
+    <li
+      role="button"
+      class="sidebar__smallThree"
+      on:click={() => {
+        scrollto('#' + sidebar[11]);
+      }}
+    >
       {$lang.powersupplyHeader}
     </li>
     <li
       role="button"
       class="sidebar__smallThree"
-      use:scrollto={'#LogicControl'}
+      on:click={() => {
+        scrollto('#' + sidebar[12]);
+      }}
     >
       {$lang.logiccontrolHeader}
     </li>
-    <li role="button" class="sidebar__smallThree" use:scrollto={'#Sensors'}>
+    <li
+      role="button"
+      class="sidebar__smallThree"
+      on:click={() => {
+        scrollto('#' + sidebar[13]);
+      }}
+    >
       {$lang.sensorsHeader}
     </li>
     <li
       role="button"
       class="sidebar__smallThree"
-      use:scrollto={'#Communication'}
+      on:click={() => {
+        scrollto('#' + sidebar[14]);
+      }}
     >
       {$lang.communicationHeader}
     </li>
     <li
       role="button"
       class="sidebar__smallThree"
-      use:scrollto={'#VisionSystem'}
+      on:click={() => {
+        scrollto('#' + sidebar[15]);
+      }}
     >
       {$lang.visionsystemHeader}
     </li>
     <li
       role="button"
       class="sidebar__smallTwo"
-      use:scrollto={'#AlgorithmDesign'}
+      on:click={() => {
+        scrollto('#' + sidebar[16]);
+      }}
     >
       {$lang.algorithmdesignHeader}
     </li>
     <li
       role="button"
       class="sidebar__smallTwo"
-      use:scrollto={'#SoftwareDesign'}
+      on:click={() => {
+        scrollto('#' + sidebar[17]);
+      }}
     >
       {$lang.softwaredesignHeader}
     </li>
     <li
       role="button"
       class="sidebar__smallOne"
-      use:scrollto={'#ExternalInterfaces'}
+      on:click={() => {
+        scrollto('#' + sidebar[18]);
+      }}
     >
       {$lang.externalinterfacesHeader}
     </li>
-    <li role="button" use:scrollto={'#Security'}>{$lang.securityHeader}</li>
+    <li
+      role="button"
+      on:click={() => {
+        scrollto('#' + sidebar[19]);
+      }}
+    >
+      {$lang.securityHeader}
+    </li>
+
+    <li
+      role="button"
+      on:click={() => {
+        scrollto('#' + sidebar[20]);
+      }}
+    >
+      {$lang.experienceHeader}
+    </li>
   </div>
 </div>
 
 <style>
-  .sidebar {
-    z-index: 1;
-    padding: 0;
-    width: 25%;
-    background-color: var(--background-color);
+  .wrapper {
+    overflow-y: auto;
+    flex: left;
     position: fixed;
-    height: 100%;
-    overflow: auto;
-    display: block;
+    width: 280px;
+    height: calc(100% - 55px);
+    background-color: var(--background-color);
+    transition: transform 400ms;
+  }
+
+  .sidebar {
+    overflow-y: auto;
+    padding: 55px 0;
   }
   .sidebar-test {
     margin-top: 55px;
@@ -139,8 +247,10 @@
 
   .sidebar li {
     display: block;
+    margin: auto;
+    padding: 3px 10px;
+    display: flex;
     color: var(--text-color);
-    padding: 10px;
     text-decoration: none;
     cursor: pointer;
   }
@@ -151,33 +261,29 @@
   }
 
   .sidebar__smallOne {
-    font-size: 0.9em;
     padding-left: 3% !important;
   }
 
   .sidebar__smallTwo {
-    font-size: 0.8em;
     padding-left: 6% !important;
   }
 
   .sidebar__smallThree {
-    font-size: 0.7em;
     padding-left: 9% !important;
   }
 
-  @media (max-width: 800px) {
-    .sidebar {
+  @media (max-width: 1000px) {
+    .wrapper {
       width: 100%;
-      transition-duration: 500ms;
       transform: translateX(100%);
-      height: 100%;
     }
-    .sidebar.opened {
+
+    .wrapper.opened {
       transform: translateX(0);
     }
 
-    .sidebar li {
-      overflow: auto;
+    .sidebar {
+      padding: 10px 0;
     }
   }
 </style>

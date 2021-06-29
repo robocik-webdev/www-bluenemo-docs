@@ -1,13 +1,11 @@
 <script>
   import { lang } from '../content.js';
-  let img = 'rsc/images';
+  let img = './rsc/images';
 </script>
 
-<div class="content">
-  <div class="content-test">
-    <h3 id="ReportSummary" style="margin-top:0;">
-      {$lang.reportsummaryHeader}
-    </h3>
+<div class="wrapper">
+  <div class="content">
+    <h3 id="ReportSummary">{$lang.reportsummaryHeader}</h3>
     <p>{@html $lang.reportsummaryContent}</p>
     <hr />
     <h3 id="OrganizationChart">{$lang.organizationchartHeader}</h3>
@@ -20,10 +18,9 @@
     <h3 id="VehicleDesign">{$lang.vechicledesignHeader}</h3>
     <h4 id="SystemDesign">{$lang.systemdesignHeader}</h4>
     <figure>
-      <img src="{img}/3.webp" alt="3" />
-      <figcaption>Fig.2 -</figcaption>
+      <img src="{img}/FrontDesign.webp" alt="front design" />
+      <figcaption>Fig.2 - Front design</figcaption>
     </figure>
-    <!-- to który render w końcu ???? -->
     <hr />
     <h4 id="MechanicalDesign">{$lang.mechanicaldesignHeader}</h4>
     <h5 id="MechanicalDesignProcess">{$lang.mechanicaldesignprocessHeader}</h5>
@@ -121,6 +118,7 @@
       <img
         src="{img}/diagram_power_communication.webp"
         alt="electronics diagram"
+        style="height:80%;width:80%;"
       />
       <figcaption>Fig.13 - Electronics block diagram.</figcaption>
     </figure>
@@ -143,7 +141,7 @@
 
     <p>{@html $lang.powersupplyContent3}</p>
     <hr />
-    <h6 id="LogicControll">{$lang.logiccontrolHeader}</h6>
+    <h6 id="LogicControl">{$lang.logiccontrolHeader}</h6>
     <p>{@html $lang.logiccontrolContent1}</p>
     <figure>
       <img src="{img}/board_controller.webp" alt="board controllers" />
@@ -262,6 +260,30 @@
     </figure>
 
     <p>{@html $lang.securityContent2}</p>
+    <hr />
+
+    <h3 id="Experience">{$lang.experienceHeader}</h3>
+    <p>{@html $lang.experienceContent1}</p>
+    <figure>
+      <img src="{img}/first_gen.webp" alt="first generation" />
+      <figcaption>Fig.27 - First Generation.</figcaption>
+    </figure>
+    <p>{@html $lang.experienceContent2}</p>
+    <figure>
+      <img src="{img}/second_gen.webp" alt="second generation" />
+      <figcaption>Fig.28 - Second Generation.</figcaption>
+    </figure>
+    <p>{@html $lang.experienceContent3}</p>
+    <figure>
+      <img src="{img}/third_gen.webp" alt="third generation" />
+      <figcaption>Fig.29 - Third Generation.</figcaption>
+    </figure>
+    <p>{@html $lang.experienceContent4}</p>
+    <figure>
+      <img src="{img}/fourth_gen.webp" alt="fourth generation" />
+      <figcaption>Fig.30 - Fourth Generation.</figcaption>
+    </figure>
+    <p>{@html $lang.experienceContent5}</p>
   </div>
 </div>
 
@@ -293,18 +315,22 @@
     width: 50%;
   }
 
-  div.content {
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 0.5% 1.5%;
+  .wrapper {
+    margin-left: 300px;
+    height: 100%;
+    width: 700px;
+    padding: 0 1.5%;
     text-align: justify;
     text-justify: inter-word;
   }
 
-  .content-test {
-    margin-top: 50px;
+  .content {
+    padding: 55px 0;
   }
 
+  #ReportSummary {
+    margin-top: 0;
+  }
   h4 {
     margin-left: 2%;
   }
@@ -317,10 +343,14 @@
     margin-left: 4%;
   }
 
-  @media (max-width: 800px) {
-    div.content {
+  @media (max-width: 1000px) {
+    .wrapper {
       margin-left: 5%;
       margin-right: 5%;
+      width: auto;
+    }
+    .content {
+      padding: 30px 0;
     }
   }
 </style>
