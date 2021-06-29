@@ -122,7 +122,6 @@
       />
       <figcaption>Fig.13 - Electronics block diagram.</figcaption>
     </figure>
-
     <hr />
     <h6 id="PowerSupply">{$lang.powersupplyHeader}</h6>
     <p>{@html $lang.powersupplyContent1}</p>
