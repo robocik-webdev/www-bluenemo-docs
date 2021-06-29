@@ -1,4 +1,5 @@
 <script>
+  import { src } from '../src.js';
   import { hidden } from '../header.js';
   import { opened, picState } from '../sidebar.js';
 
@@ -8,9 +9,9 @@
     $opened = !$opened;
 
     if (!$opened) {
-      $picState = 'rsc/Logo/menu.svg';
+      $picState = src + 'rsc/Logo/menu.svg';
     } else {
-      $picState = 'rsc/Logo/close.svg';
+      $picState = src + 'rsc/Logo/close.svg';
     }
   }
 </script>
