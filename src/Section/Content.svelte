@@ -1,7 +1,6 @@
 <script>
-  import { src } from '../src.js';
   import { lang } from '../content.js';
-  let img = src + 'rsc/images';
+  let img = './rsc/images';
 </script>
 
 <div class="content">
